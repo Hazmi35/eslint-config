@@ -75,7 +75,6 @@ module.exports = {
         "@typescript-eslint/no-extraneous-class": "error",
         "@typescript-eslint/no-floating-promises": "warn",
         "@typescript-eslint/no-non-null-assertion": "off",
-        "@typescript-eslint/no-require-imports": "warn",
         "@typescript-eslint/no-throw-literal": "error",
         "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
         "@typescript-eslint/no-unnecessary-condition": "error",
