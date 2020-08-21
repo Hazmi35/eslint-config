@@ -1,2 +1,2 @@
 # eslint-config
-> A ~~strict~~ eslint config that I used for my projects ✔
+> An ~~(strict)~~ eslint config that I used in my projects ✔
