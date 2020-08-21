@@ -56,7 +56,7 @@
         "accessor-pairs": "off",
         "array-callback-return": "warn",
         "block-scoped-var": "error",
-        "class-methods-use-this": "warn",
+        "class-methods-use-this": "off",
         "complexity": "off",
         "consistent-return": "off",
         "curly": ["error", "multi-line", "consistent"],
