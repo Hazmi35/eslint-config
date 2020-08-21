@@ -6,6 +6,15 @@
   "license": "MIT",
   "author": "Hazmi35 <contact@hzmi.xyz>",
   "main": "index.js",
+  "keywords": [
+    "typescript",
+    "eslintconfig",
+    "lint",
+    "linter",
+    "eslint",
+    "typecript-eslint",
+    "eslint-config"
+  ],
   "devDependencies": {
     "@types/node": "*",
     "@typescript-eslint/eslint-plugin": ">=3.9.1",
