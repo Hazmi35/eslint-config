@@ -130,7 +130,7 @@
         "prefer-named-capture-group": "off",
         "prefer-promise-reject-errors": "warn",
         "prefer-regex-literals": "warn",
-        "radix": "error",
+        "radix": "warn",
         "require-await": "off",
         "vars-on-top": "off",
         "require-unicode-regexp": "warn",
