@@ -169,7 +169,7 @@
         "comma-style": ["error", "last"],
         "computed-property-spacing": ["error", "never"],
         "consistent-this": ["error", "self"],
-        "eol-last": ["error", "always"],
+        "eol-last": ["warn", "always"],
         "func-call-spacing": ["error", "never"],
         "func-name-matching": ["warn", "always"],
         "func-names": ["warn", "as-needed"],
