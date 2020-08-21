@@ -46,8 +46,7 @@ module.exports = {
         "@typescript-eslint/init-declaration": "off",
         "keyword-spacing": "off",
         "@typescript-eslint/keyword-spacing": ["error", {
-            before: true,
-            after: true
+            before: true, after: true
         }],
         "lines-between-class-members": "off",
         "@typescript-eslint/lines-between-class-members": ["error", "always", {
@@ -103,6 +102,9 @@ module.exports = {
         }],
         "require-await": "off",
         "@typescript-eslint/require-await": "off",
+        "@typescript-eslint/restrict-template-expressions": [
+            "warn", { allowAny: true }
+        ],
         semi: "off",
         "@typescript-eslint/semi": ["error", "always", {
             omitLastInOneLineBlock: false
