@@ -1,0 +1,9 @@
+{
+  "name": "@hzmi/eslint-config",
+  "version": "0.0.1",
+  "description": "I used this eslint config for my projects",
+  "main": "index.js",
+  "repository": "https://github.com/Hazmi35/eslint-config",
+  "author": "Hazmi35 <contact@hzmi.xyz>",
+  "license": "MIT"
+}
