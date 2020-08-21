@@ -1,6 +1,6 @@
 {
   "name": "@hzmi/eslint-config",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "An eslint config that I used in my projects",
   "repository": "https://github.com/Hazmi35/eslint-config",
   "license": "MIT",

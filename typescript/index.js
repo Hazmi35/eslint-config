@@ -3,7 +3,10 @@
 const path = require("path");
 
 module.exports = {
-    "extends": path.join(__dirname, "..", "index.js"),
+    "extends": [path.join(__dirname, "..", "index.js"), "plugin:@typescript-eslint/recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking"],
+    parserOptions: {
+        project: "./tsconfig.json"
+    },
     rules: {
         "@typescript-eslint/adjacent-overload-signatures": "warn",
         "@typescript-eslint/array-type": "off",
