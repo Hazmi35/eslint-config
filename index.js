@@ -32,10 +32,10 @@ module.exports = {
         "no-inner-declarations": 0,
         "no-invalid-regexp": 1,
         "no-irregular-whitespace": [2, {
-			skipStrings: true,
-			skipComments: true,
-			skipRegExps: true,
-			skipTemplates: true,
+            skipStrings: true,
+            skipComments: true,
+            skipRegExps: true,
+            skipTemplates: true,
         }],
         "no-loss-of-precision": 1,
         "no-misleading-character-class": 1,
@@ -53,5 +53,5 @@ module.exports = {
         "no-unsafe-negation": 2,
         "use-isnan": 2,
         "valid-typeof": 2,
-    }    
+    }
 };
