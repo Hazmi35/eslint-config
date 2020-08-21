@@ -5,6 +5,9 @@
   "repository": "https://github.com/Hazmi35/eslint-config",
   "license": "MIT",
   "author": "Hazmi35 <contact@hzmi.xyz>",
+  "scripts": {
+    "lint": "eslint **/**.js"
+  },
   "main": "index.js",
   "keywords": [
     "typescript",
