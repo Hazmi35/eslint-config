@@ -103,7 +103,7 @@ module.exports = {
         "require-await": "off",
         "@typescript-eslint/require-await": "off",
         "@typescript-eslint/restrict-template-expressions": [
-            "warn", { allowAny: true }
+            "warn", { allowNumber: true }
         ],
         semi: "off",
         "@typescript-eslint/semi": ["error", "always", {
