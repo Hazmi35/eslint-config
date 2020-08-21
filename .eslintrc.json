@@ -13,7 +13,7 @@
         "no-await-in-loop": "off",
         "no-compare-neg-zero": "error",
         "no-cond-assign": "warn",
-        "no-console": "warn",
+        "no-console": "off",
         "no-constant-condition": "off",
         "no-control-regex": "off",
         "no-debugger": "error",
