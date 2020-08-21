@@ -64,7 +64,7 @@
         "default-case-last": "warn",
         "default-param-last": "warn",
         "dot-location": ["error", "property"],
-        "dot-notation": ["error", {
+        "dot-notation": ["warn", {
             "allowKeywords": true,
             "allowPattern": "(^[A-Z])|(^[a-z]+(_[a-z]+)+$)"
         }],
@@ -254,7 +254,7 @@
         }],
         "padded-blocks": ["error", "never"],
         "padding-line-between-statements": "off",
-        "quote-props": ["error", "consistent-as-needed", {
+        "quote-props": ["warn", "as-needed", {
             "keywords": true,
             "unnecessary": true,
             "numbers": false
