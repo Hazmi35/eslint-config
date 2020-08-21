@@ -45,7 +45,7 @@
         "no-regex-spaces": "warn",
         "no-setter-return": "warn",
         "no-sparse-arrays": "warn",
-        "no-template-curly-in-string": "off",
+        "no-template-curly-in-string": "warn",
         "no-unexpected-multiline": "error",
         "no-unreachable": "warn",
         "no-unreachable-loop": "warn",
