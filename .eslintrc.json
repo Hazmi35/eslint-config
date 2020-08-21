@@ -55,7 +55,7 @@
         "valid-typeof": "error",
         "accessor-pairs": "off",
         "array-callback-return": "warn",
-        "block-scoped-var": "error",
+        "block-scoped-var": "warn",
         "class-methods-use-this": "off",
         "complexity": "off",
         "consistent-return": "off",
