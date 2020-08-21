@@ -212,7 +212,7 @@
         }],
         "multiline-comment-style": "off",
         "multiline-ternary": ["error", "always-multiline"],
-        "new-cap": "warn",
+        "new-cap": "off",
         "new-parens": "error",
         "newline-per-chained-call": ["error", {
             "ignoreChainWithDepth": 3
