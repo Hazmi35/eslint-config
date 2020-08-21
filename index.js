@@ -1,2 +1,4 @@
 /* eslint-env node */
-module.exports = require("./.eslintrc.json");
+const path = require("path");
+
+module.exports = require(path.join(__dirname, ".eslintrc.json"));
