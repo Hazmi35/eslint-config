@@ -21,7 +21,7 @@ Example:
 	"extends": "@hazmi35/eslint-config"
 }
 ```
-or "@hazmi35/eslint-config/node" for Node environment
+or `"@hazmi35/eslint-config/node"` for Node environment
 
 
 Example (TS):
@@ -30,4 +30,4 @@ Example (TS):
     "extends": "@hazmi35/eslint-config/typescript"
 }
 ```
-or "@hazmi35/eslint-config/typescript/node for Node environment
+or `"@hazmi35/eslint-config/typescript/node` for Node environment
