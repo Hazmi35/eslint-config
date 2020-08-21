@@ -1,7 +1,7 @@
 {
   "name": "@hazmi35/eslint-config",
   "version": "0.9.6",
-  "description": "An eslint shareable config that I used in my projects",
+  "description": "An ESLint shareable config that I used in my projects",
   "repository": "https://github.com/Hazmi35/eslint-config",
   "license": "MIT",
   "author": "Hazmi35 <contact@hzmi.xyz>",
