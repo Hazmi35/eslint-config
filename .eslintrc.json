@@ -133,7 +133,6 @@
         "radix": "warn",
         "require-await": "off",
         "vars-on-top": "off",
-        "require-unicode-regexp": "warn",
         "wrap-iife": ["error", "inside"],
         "yoda": "error",
         "strict": ["error", "never"],
