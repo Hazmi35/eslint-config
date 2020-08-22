@@ -255,11 +255,7 @@
         }],
         "padded-blocks": ["error", "never"],
         "padding-line-between-statements": "off",
-        "quote-props": ["warn", "as-needed", {
-            "keywords": true,
-            "unnecessary": true,
-            "numbers": false
-        }],
+        "quote-props": ["warn", "as-needed"],
         "quotes": ["warn", "double", {
             "avoidEscape": true,
             "allowTemplateLiterals": true
