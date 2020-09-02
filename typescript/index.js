@@ -24,7 +24,10 @@ module.exports = {
             before: false,
             after: true
         }],
-        "@typescript-eslint/consistent-type-assertions": ["error", { assertionStyle: "as", objectLiteralTypeAssertions: "allow-as-parameter" }],
+        "@typescript-eslint/consistent-type-assertions": ["error", {
+            assertionStyle: "as",
+            objectLiteralTypeAssertions: "allow-as-parameter"
+        }],
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "default-param-last": "off",
         "@typescript-eslint/default-param-last": "warn",
@@ -46,7 +49,8 @@ module.exports = {
         "@typescript-eslint/init-declaration": "off",
         "keyword-spacing": "off",
         "@typescript-eslint/keyword-spacing": ["error", {
-            before: true, after: true
+            before: true,
+            after: true
         }],
         "lines-between-class-members": "off",
         "@typescript-eslint/lines-between-class-members": ["error", "always", {
@@ -54,7 +58,25 @@ module.exports = {
         }],
         "@typescript-eslint/member-delimiter-style": "error",
         "@typescript-eslint/member-ordering": "off",
-        "@typescript-eslint/naming-convention": "warn",
+        "@typescript-eslint/naming-convention": ["warn",
+            {
+                selector: "default",
+                format: ["camelCase", "PascalCase"],
+                leadingUnderscore: "allow",
+                trailingUnderscore: "allow"
+            },
+            {
+                selector: "variableLike",
+                format: ["camelCase", "PascalCase"]
+            },
+            {
+                selector: "memberLike",
+                format: ["camelCase", "PascalCase", "snake_case", "UPPER_CASE"]
+            },
+            {
+                selector: "typeLike",
+                format: ["camelCase", "PascalCase"]
+            }],
         "no-array-constructor": "off",
         "@typescript-eslint/no-array-constructor": "off",
         "@typescript-eslint/no-base-to-string": "error",
@@ -86,9 +108,15 @@ module.exports = {
         "@typescript-eslint/no-unsafe-return": "off",
         "@typescript-eslint/no-unused-expressions": "off",
         "no-unused-vars": "off",
-        "@typescript-eslint/no-unused-vars": ["warn", { vars: "all", args: "after-used", ignoreRestSiblings: true }],
+        "@typescript-eslint/no-unused-vars": ["warn", {
+            vars: "all",
+            args: "after-used",
+            ignoreRestSiblings: true
+        }],
         "no-use-before-define": "off",
-        "@typescript-eslint/no-use-before-define": ["warn", { functions: false }],
+        "@typescript-eslint/no-use-before-define": ["warn", {
+            functions: false
+        }],
         "no-useless-constructor": "off",
         "@typescript-eslint/no-useless-constructor": "warn",
         "@typescript-eslint/prefer-for-of": "warn",
@@ -105,7 +133,11 @@ module.exports = {
         "require-await": "off",
         "@typescript-eslint/require-await": "off",
         "@typescript-eslint/restrict-template-expressions": [
-            "warn", { allowAny: true, allowBoolean: true, allowNumber: true }
+            "warn", {
+                allowAny: true,
+                allowBoolean: true,
+                allowNumber: true
+            }
         ],
         semi: "off",
         "@typescript-eslint/semi": ["error", "always", {
