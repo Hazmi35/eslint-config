@@ -146,7 +146,7 @@
         "no-undef-init": "off",
         "no-undefined": "off",
         "no-unused-vars": "warn",
-        "no-use-before-define": ["warb", {
+        "no-use-before-define": ["warn", {
             "functions": false
         }],
         "array-bracket-newline": ["error", "consistent"],
