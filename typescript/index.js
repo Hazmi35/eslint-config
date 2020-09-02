@@ -63,19 +63,25 @@ module.exports = {
                 selector: "default",
                 format: ["camelCase", "PascalCase"],
                 leadingUnderscore: "allow",
-                trailingUnderscore: "allow"
+                trailingUnderscore: "forbid"
             },
             {
                 selector: "variableLike",
-                format: ["camelCase", "PascalCase"]
+                format: ["camelCase", "PascalCase"],
+                leadingUnderscore: "allow",
+                trailingUnderscore: "forbid"
             },
             {
                 selector: "memberLike",
-                format: ["camelCase", "PascalCase", "snake_case", "UPPER_CASE"]
+                format: ["camelCase", "PascalCase", "snake_case", "UPPER_CASE"],
+                leadingUnderscore: "allow",
+                trailingUnderscore: "forbid"
             },
             {
                 selector: "typeLike",
-                format: ["camelCase", "PascalCase"]
+                format: ["camelCase", "PascalCase"],
+                leadingUnderscore: "allow",
+                trailingUnderscore: "forbid"
             }],
         "no-array-constructor": "off",
         "@typescript-eslint/no-array-constructor": "off",
