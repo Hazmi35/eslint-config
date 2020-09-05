@@ -8,10 +8,22 @@ updates:
     timezone: Asia/Jakarta
   open-pull-requests-limit: 99
   target-branch: master
-  reviewers:
-  - Hazmi35
   labels:
   - dependencies
   commit-message:
     prefix: chore
+    include: scope
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "06:00"
+    timezone: Asia/Jakarta
+  open-pull-requests-limit: 99
+  target-branch: master
+  labels:
+  - gh-actions
+  - dependencies
+  commit-message:
+    prefix: ci
     include: scope
