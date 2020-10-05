@@ -28,6 +28,8 @@ module.exports = {
             assertionStyle: "as",
             objectLiteralTypeAssertions: "allow-as-parameter"
         }],
+        "@typescript-eslint/consistent-type-imports": ["warn", { prefer: "type-imports" }],
+        "@typescript-eslint/consistent-indexed-object-style": ["error", "record"],
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "default-param-last": "off",
         "@typescript-eslint/default-param-last": "warn",
@@ -57,7 +59,7 @@ module.exports = {
             exceptAfterSingleLine: true
         }],
         "@typescript-eslint/member-delimiter-style": "error",
-        "@typescript-eslint/member-ordering": "off",
+        "@typescript-eslint/member-ordering": "warn",
         "@typescript-eslint/naming-convention": ["warn",
             {
                 selector: "default",
@@ -88,6 +90,8 @@ module.exports = {
         "@typescript-eslint/no-base-to-string": "error",
         "no-dupe-class-members": "off",
         "@typescript-eslint/no-dupe-class-members": "error",
+        "no-duplicate-imports": "off",
+        "@typescript-eslint/no-duplicate-imports": ["error", { includeExports: false }],
         "@typescript-eslint/no-dynamic-delete": "error",
         "no-empty-function": "off",
         "@typescript-eslint/no-empty-function": "warn",
