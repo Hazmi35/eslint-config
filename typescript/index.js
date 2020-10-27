@@ -105,6 +105,9 @@ module.exports = {
         "@typescript-eslint/no-extra-semi": "error",
         "@typescript-eslint/no-extraneous-class": "error",
         "@typescript-eslint/no-floating-promises": "warn",
+        "@typescript-eslint/no-missused-promises": ["warn", {
+            checksVoidReturn: false
+        }],
         "@typescript-eslint/no-non-null-assertion": "off",
         "no-redeclare": "off",
         "@typescript-eslint/no-redeclare": ["error"],
