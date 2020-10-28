@@ -1,7 +1,7 @@
 /* eslint-env node */
-const path = require("path");
+const { resolve } = require("path");
 
 module.exports = {
-    extends: path.join(__dirname, "index.js"),
+    extends: resolve(__dirname, "index.js"),
     env: { node: true }
 };

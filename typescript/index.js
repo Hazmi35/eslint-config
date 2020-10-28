@@ -1,9 +1,9 @@
 /* eslint-disable sort-keys */
 /* eslint-env node */
-const path = require("path");
+const { resolve } = require("path");
 
 module.exports = {
-    extends: [path.join(__dirname, "..", "index.js"), "plugin:@typescript-eslint/recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking"],
+    extends: [resolve(__dirname, "..", "index.js"), "plugin:@typescript-eslint/recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking"],
     parserOptions: {
         project: "./tsconfig.json"
     },
