@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [12.x, 14.x]
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2.3.3
@@ -22,6 +22,7 @@ jobs:
       uses: actions/setup-node@v2.1.2
       with:
         node-version: ${{ matrix.node-version }}
+        check-latest: true
         
     - name: Install dependencies
       run: yarn install --frozen-lockfile
