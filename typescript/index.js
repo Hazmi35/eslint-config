@@ -60,6 +60,7 @@ module.exports = {
         }],
         "@typescript-eslint/member-delimiter-style": "error",
         "@typescript-eslint/member-ordering": "warn",
+        camelcase: "off",
         "@typescript-eslint/naming-convention": ["warn",
             {
                 selector: "default",
