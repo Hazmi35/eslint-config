@@ -28,7 +28,7 @@ module.exports = {
             assertionStyle: "as",
             objectLiteralTypeAssertions: "allow-as-parameter"
         }],
-        "@typescript-eslint/consistent-type-imports": ["warn", { prefer: "type-imports" }],
+        "@typescript-eslint/consistent-type-imports": ["warn", { prefer: "no-type-imports" }],
         "@typescript-eslint/consistent-indexed-object-style": ["error", "record"],
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "default-param-last": "off",
