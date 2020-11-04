@@ -92,7 +92,7 @@ module.exports = {
         "no-dupe-class-members": "off",
         "@typescript-eslint/no-dupe-class-members": "error",
         "no-duplicate-imports": "off",
-        "@typescript-eslint/no-duplicate-imports": ["error", { includeExports: false }],
+        "@typescript-eslint/no-duplicate-imports": ["warn", { includeExports: false }],
         "@typescript-eslint/no-dynamic-delete": "error",
         "no-empty-function": "off",
         "@typescript-eslint/no-empty-function": "warn",
