@@ -20,10 +20,27 @@
     "lint": "eslint --ignore-path .gitignore . --cache --cache-location .cache/eslintcache"
   },
   "devDependencies": {
-    "@types/node": "^14.4.5",
+    "@types/node": "^14.14.5",
     "@typescript-eslint/eslint-plugin": ">=4.4.0",
     "@typescript-eslint/parser": ">=4.4.0",
     "eslint": ">=7.8.1",
     "typescript": ">=3.8.2 <4.1.0"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">=4.4.0",
+    "@typescript-eslint/parser": ">=4.4.0",
+    "eslint": ">=7.8.1",
+    "typescript": ">=3.8.2 <4.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
   }
 }
