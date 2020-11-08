@@ -38,7 +38,7 @@ module.exports = {
             allowKeywords: true,
             allowPattern: "(^[A-Z])|(^[a-z]+(_[a-z]+)+$)"
         }],
-        "@typescript-eslint/explicit-function-return-type": "warn",
+        "@typescript-eslint/explicit-function-return-type": ["warn", { allowExpressions: true }],
         "@typescript-eslint/explicit-member-accessibility": "warn",
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "func-call-spacing": "off",
