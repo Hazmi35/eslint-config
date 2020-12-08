@@ -50,6 +50,7 @@
         "no-unreachable": "warn",
         "no-unreachable-loop": "warn",
         "no-unsafe-finally": "warn",
+        "no-unsafe-optional-chaining": "warn",
         "no-unsafe-negation": "error",
         "use-isnan": "error",
         "valid-typeof": "error",
