@@ -131,7 +131,7 @@
         "prefer-named-capture-group": "off",
         "prefer-promise-reject-errors": "warn",
         "prefer-regex-literals": "warn",
-        "radix": "warn",
+        "radix": ["warn", "as-needed"],
         "require-await": "off",
         "vars-on-top": "off",
         "wrap-iife": ["error", "inside"],
