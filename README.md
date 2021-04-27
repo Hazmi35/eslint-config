@@ -8,11 +8,11 @@
 ## Install
 
 ```bash
-yarn add -D @hazmi35/eslint-config
-```
-or with NPM
-```bash
 npm install -D @hazmi35/eslint-config
+```
+or with yarn
+```bash
+yarn add -D @hazmi35/eslint-config
 ```
 
 ## Usage
