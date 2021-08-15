@@ -13,7 +13,7 @@ module.exports = {
         "@typescript-eslint/await-thenable": "off",
         "@typescript-eslint/ban-ts-comments": "off",
         "@typescript-eslint/ban-tslint-comment": "warn",
-        "@typescript-eslint/ban-types": "error",
+        "@typescript-eslint/ban-types": "warn",
         "brace-style": "off",
         "@typescript-eslint/brace-style": ["error", "1tbs", {
             allowSingleLine: true
