@@ -272,7 +272,8 @@
         "semi-style": ["error", "last"],
         "sort-keys": ["warn", "asc", {
             "caseSensitive": true,
-            "minKeys": 5
+            "minKeys": 5,
+            "natural": true
         }],
         "sort-vars": "off",
         "space-before-blocks": ["error", "always"],
