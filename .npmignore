@@ -111,3 +111,4 @@ dist
 .npmignore
 .npmrc
 .node-version
+.vscode
