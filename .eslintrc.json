@@ -12,17 +12,16 @@
         "getter-return": ["error", { "allowImplicit": false }],
         "no-constructor-return": "error",
         "no-duplicate-imports": "warn",
-        "no-self-compare": "warn",
-        "no-template-curly-in-string": "warn",
-        "no-unmodified-loop-condition": "warn",
-        "no-unreachable-loop": "warn",
+        "no-self-compare": "error",
+        "no-template-curly-in-string": "error",
+        "no-unmodified-loop-condition": "error",
+        "no-unreachable-loop": "error",
         "no-unused-private-class-members": "error",
         "no-unused-vars": ["error", {
             "argsIgnorePattern": "^_",
             "args": "after-used",
             "caughtErrors": "all",
             "caughtErrorsIgnorePattern": "^_"
-        }],
-        "no-use-before-define": ["error", { "functions": false }]
+        }]
     }
 }
