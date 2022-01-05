@@ -182,12 +182,18 @@ const eslintRecommended = require(resolve(require.resolve("eslint"), "..", "..",
 const baseRulesOptions = { ...eslintRecommended.rules, ...require(base).rules };
 
 // Infer options from baseRulesOptions for the extensionRules
-const toInfer = Object.entries(extensionRules)
+const doneInferred = Object.entries(extensionRules)
     .filter(([_key, val]) => val === "infer")
     .map(([key]) => [key, baseRulesOptions[delPrefix(key)] ?? undefined]);
 
+// Handle if there is undefined
+const inferredButUndefined = doneInferred.filter(([_, v]) => v === undefined);
+if (inferredButUndefined.length !== 0) {
+    throw new Error(`There are ${inferredButUndefined.length} total of inferredButUndefined. List:\n${inferredButUndefined.map(([k]) => k).join("\n")}`);
+}
+
 // Apply inferred options
-extensionRules = { ...Object.fromEntries(baseRules), ...Object.fromEntries(toInfer) };
+extensionRules = { ...Object.fromEntries(baseRules), ...Object.fromEntries(doneInferred) };
 
 module.exports = {
     extends: [base, "plugin:@typescript-eslint/recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking"],
