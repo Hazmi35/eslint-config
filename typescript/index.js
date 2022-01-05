@@ -185,6 +185,8 @@ const baseRulesOptions = { ...eslintRecommended.rules, ...require(base).rules };
 const toInfer = Object.entries(extensionRules)
     .filter(([_key, val]) => val === "infer")
     .map(([key]) => [key, baseRulesOptions[delPrefix(key)] ?? undefined]);
+
+// Apply infered options
 extensionRules = { ...Object.fromEntries(baseRules), ...Object.fromEntries(toInfer) };
 
 module.exports = {
