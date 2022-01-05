@@ -159,7 +159,7 @@ let extensionRules = {
     "padding-line-between-statements": "infer",
     quotes: "infer",
     "require-await": "infer",
-    "return-await": "infer",
+    "return-await": "warn",
     semi: "infer",
     "space-before-function-paren": "infer",
     "space-infix-ops": "infer"

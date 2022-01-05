@@ -84,7 +84,7 @@
         "no-proto": "error",
         "no-regex-spaces": "warn",
         "no-return-assign": "error",
-        "no-return-await": "error",
+        "no-return-await": "off",
         "no-script-url": "warn",
         "no-sequences": "error",
         "no-shadow": "error",
