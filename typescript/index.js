@@ -101,7 +101,7 @@ let rules = {
     "no-unnecessary-boolean-literal-compare": "error",
     "no-unnecessary-condition": "error",
     "no-unnecessary-type-arguments": "error",
-    "no-unsafe-assignment": "off", // TODO: Create a more stricter version that disallow implicit any or even all any?
+    "no-unsafe-assignment": "off",
     "no-unsafe-call": "warn",
     "no-unsafe-return": "off",
     "non-nullable-type-assertion-style": "warn",
