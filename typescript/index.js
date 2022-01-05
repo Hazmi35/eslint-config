@@ -126,7 +126,7 @@ let rules = {
 
 /*
  * @typescript-eslint extension rules are rules that is extended from eslint original rules
- * "infer" as value here will be modified to be infered from baseRules
+ * "infer" as value here will be modified to be inferred from baseRules
  */
 let extensionRules = {
     "brace-style": "infer",
@@ -186,7 +186,7 @@ const toInfer = Object.entries(extensionRules)
     .filter(([_key, val]) => val === "infer")
     .map(([key]) => [key, baseRulesOptions[delPrefix(key)] ?? undefined]);
 
-// Apply infered options
+// Apply inferred options
 extensionRules = { ...Object.fromEntries(baseRules), ...Object.fromEntries(toInfer) };
 
 module.exports = {
