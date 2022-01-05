@@ -124,69 +124,64 @@ let rules = {
     "unified-signatures": "warn"
 };
 
-/*
- * @typescript-eslint extended rules from eslint original rules
- * Currently the extended rules option is not different than the one from base rules, so I make it an Array and infer the option from the base rules
- */
-let extensionRules = [
-    "brace-style",
-    "comma-dangle",
-    "comma-spacing",
-    "default-param-last",
-    "dot-notation",
-    "func-call-spacing",
-    "indent",
-    "keyword-spacing",
-    "lines-between-class-members",
-    "no-array-constructor",
-    "no-dupe-class-members",
-    "no-duplicate-imports",
-    "no-empty-function",
-    "no-extra-parens",
-    "no-extra-semi",
-    "no-implied-eval",
-    "no-invalid-this",
-    "no-loop-func",
-    "no-loss-of-precision",
-    "no-magic-numbers",
-    "no-redeclare",
-    "no-restricted-imports",
-    "no-shadow",
-    "no-throw-literal",
-    "no-unused-expressions",
-    "no-unused-vars",
-    "no-use-before-define",
-    "no-useless-constructor",
-    "object-curly-spacing",
-    "padding-line-between-statements",
-    "quotes",
-    "require-await",
-    "return-await",
-    "semi",
-    "space-before-function-paren",
-    "space-infix-ops"
-];
+// @typescript-eslint extended rules from eslint original rules
+let extensionRules = {
+    "brace-style": "infer",
+    "comma-dangle": "infer",
+    "comma-spacing": "infer",
+    "default-param-last": "infer",
+    "dot-notation": "infer",
+    "func-call-spacing": "infer",
+    indent: "infer",
+    "keyword-spacing": "infer",
+    "lines-between-class-members": "infer",
+    "no-array-constructor": "infer",
+    "no-dupe-class-members": "infer",
+    "no-duplicate-imports": "infer",
+    "no-empty-function": "infer",
+    "no-extra-parens": "infer",
+    "no-extra-semi": "infer",
+    "no-implied-eval": "infer",
+    "no-invalid-this": "infer",
+    "no-loop-func": "infer",
+    "no-loss-of-precision": "infer",
+    "no-magic-numbers": "infer",
+    "no-redeclare": "infer",
+    "no-restricted-imports": "infer",
+    "no-shadow": "infer",
+    "no-throw-literal": "infer",
+    "no-unused-expressions": "infer",
+    "no-unused-vars": "infer",
+    "no-use-before-define": "infer",
+    "no-useless-constructor": "infer",
+    "object-curly-spacing": "infer",
+    "padding-line-between-statements": "infer",
+    quotes: "infer",
+    "require-await": "infer",
+    "return-await": "infer",
+    semi: "infer",
+    "space-before-function-paren": "infer",
+    "space-infix-ops": "infer"
+};
 
 const addPrefix = string => `@typescript-eslint/${string}`;
 const delPrefix = string => string.replace("@typescript-eslint/", "");
 
 // Prefix everything with "@typescript-eslint/""
 rules = Object.fromEntries(Object.entries(rules).map(([key, val]) => [addPrefix(key), val]));
-extensionRules = Object.fromEntries(extensionRules.map(rule => [addPrefix(rule), "toBeInfered"]));
+extensionRules = Object.fromEntries(Object.entries(extensionRules).map(([key, val]) => [addPrefix(key), val]));
 
-// Generate the baseRules from extensionRules and disable it
-const baseRules = Object.entries(extensionRules).map(([key]) => [delPrefix(key), "off"]);
+// Generate the originalRules from extensionRules and disable it
+const originalRules = Object.entries(extensionRules).map(([key]) => [delPrefix(key), "off"]);
+extensionRules = { ...Object.fromEntries(originalRules), ...extensionRules };
 
-// Import baseRules options
+// Infer options from originalRules in .eslintrc.json for the rules with "infer" as value
 const eslintRecommended = require(resolve(require.resolve("eslint"), "..", "..", "conf", "eslint-recommended.js"));
-const baseRulesOptions = { ...eslintRecommended.rules, ...require(base).rules };
-
-// Infer options from baseRulesOptions for the extensionRules
+const originalRulesOptions = { ...eslintRecommended, ...require(base).rules };
 const toInfer = Object.entries(extensionRules)
-    .filter(([_key, val]) => val === "toBeInfered")
-    .map(([key]) => [key, baseRulesOptions[delPrefix(key)] ?? "off"]);
-
-extensionRules = { ...Object.fromEntries(baseRules), ...Object.fromEntries(toInfer) };
+    .filter(([_key, val]) => val === "infer")
+    .map(([key]) => [key, originalRulesOptions[delPrefix(key)] ?? "error"]);
+extensionRules = { ...extensionRules, ...Object.fromEntries(toInfer) };
 
 module.exports = {
     extends: [base, "plugin:@typescript-eslint/recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking"],
