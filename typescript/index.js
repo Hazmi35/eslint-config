@@ -191,7 +191,7 @@ if (inferredButUndefined.length !== 0) {
 }
 
 // Apply inferred options
-extensionRules = { ...Object.fromEntries(baseRules), ...Object.fromEntries(doneInferred) };
+extensionRules = { ...Object.fromEntries(baseRules), ...extensionRules, ...Object.fromEntries(doneInferred) };
 
 module.exports = {
     extends: [base, "plugin:@typescript-eslint/recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking"],
