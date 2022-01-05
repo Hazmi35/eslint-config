@@ -187,7 +187,10 @@ const doneInferred = Object.entries(extensionRules)
 // Handle if there is undefined
 const inferredButUndefined = doneInferred.filter(([_, v]) => v === undefined);
 if (inferredButUndefined.length !== 0) {
-    throw new Error(`There are ${inferredButUndefined.length} total of inferredButUndefined. List:\n${inferredButUndefined.map(([k]) => k).join("\n")}`);
+    throw new Error(
+        `There are ${inferredButUndefined.length} total of inferredButUndefined.` +
+        `List:\n${inferredButUndefined.map(([k]) => k).join("\n")}`
+    );
 }
 
 // Apply inferred options

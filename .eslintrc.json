@@ -44,10 +44,10 @@
         "eqeqeq": ["error", "smart"],
         "func-name-matching": ["warn", "always"],
         "func-names": ["warn", "as-needed"],
-        "func-style": ["warn", "declaration", { "allowArrowFunctions": true }], // TODO: Test this too.
+        "func-style": ["warn", "declaration", { "allowArrowFunctions": true }],
         "grouped-accessor-pairs": ["warn", "getBeforeSet"],
         "guard-for-in": "warn",
-        "max-classes-per-file": ["error", { "max": 3 }], // TODO: Reconsider this?,
+        "max-classes-per-file": ["error", { "max": 3 }],
         "max-depth": ["warn", { "max": 4 }],
         "max-lines": ["warn", { "max": 300, "skipBlankLines": true, "skipComments": true }],
         "max-nested-callbacks": ["warn", { "max": 10 }],
@@ -115,7 +115,6 @@
         "quote-props": ["warn", "as-needed"],
         "radix": ["warn", "as-needed"],
         "require-await": "warn",
-        "sort-imports": "off", // TODO: Consider this?
         "spaced-comment": ["warn", "always"],
         "strict": ["error", "never"],
         "symbol-description": "warn",
@@ -140,28 +139,27 @@
         "function-paren-newline": ["error", "consistent"],
         "generator-star-spacing": ["warn", "both"],
         "implicit-arrow-linebreak": ["error", "beside"],
-        "indent": ["error", 4, { "SwitchCase": 1 }], // TODO: Reconsider this.
+        "indent": ["error", 4, { "SwitchCase": 1 }],
         "jsx-quotes": ["error", "prefer-double"],
         "key-spacing": ["error", { "beforeColon": false, "afterColon": true, "mode": "strict"}],
         "keyword-spacing": ["error", { "before": true, "after": true }],
         "linebreak-style": ["warn", "unix"],
-        "lines-around-comment": "off", // TODO: Consider this
         "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
-        "max-len": "off", // TODO: IMPORTANT ⚠️ CONSIDER THIS
+        "max-len": ["warn", { "code": 150, "tabWidth": 4 }],
         "max-statements-per-line": ["error", { "max": 3 }],
         "multiline-ternary": ["error", "always-multiline"],
         "new-parens": "error",
         "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 3 }],
-        "no-extra-parens": "off", // TODO: Consider this?
+        "no-extra-parens": "warn",
         "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
         "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
         "no-multiple-empty-lines": "error",
         "no-trailing-spaces": "warn",
         "no-whitespace-before-property": "error",
-        "nonblock-statement-body-position": ["warn", "beside"], // TODO: Test this and reconsider?
+        "nonblock-statement-body-position": ["warn", "beside"],
         "object-curly-newline": ["error", { "multiline": true, "consistent": true }],
         "object-curly-spacing": ["error", "always"],
-        "object-property-newline": "off", // TODO: Consider this
+        "object-property-newline": ["warn", { "allowAllPropertiesOnSameLine": true }],
         "operator-linebreak": ["error", "after", {
             "overrides": {
                 "?": "before",
@@ -169,7 +167,7 @@
             }
         }],
         "padded-blocks": ["error", "never"],
-        "padding-line-between-statements": "off", // TODO: Consider this?
+        "padding-line-between-statements": "warn",
         "quotes": ["warn", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
         "rest-spread-spacing": ["error", "never"],
         "semi": ["error", "always", { "omitLastInOneLineBlock": false }],
