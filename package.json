@@ -19,6 +19,9 @@
   "scripts": {
     "lint": "eslint --ignore-path .gitignore ."
   },
+  "dependencies": {
+    "strip-json-comments": "^3.1.1"
+  },
   "devDependencies": {
     "@types/node": "^17.0.0",
     "@typescript-eslint/eslint-plugin": ">=5.7.0",
