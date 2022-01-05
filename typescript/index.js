@@ -124,7 +124,10 @@ let rules = {
     "unified-signatures": "warn"
 };
 
-// @typescript-eslint extended rules from eslint original rules
+/*
+ * @typescript-eslint extension rules are rules that is extended from eslint original rules
+ * "infer" as value here will be modified to be infered from baseRules
+ */
 let extensionRules = {
     "brace-style": "infer",
     "comma-dangle": "infer",
@@ -171,17 +174,18 @@ const delPrefix = string => string.replace("@typescript-eslint/", "");
 rules = Object.fromEntries(Object.entries(rules).map(([key, val]) => [addPrefix(key), val]));
 extensionRules = Object.fromEntries(Object.entries(extensionRules).map(([key, val]) => [addPrefix(key), val]));
 
-// Generate the originalRules from extensionRules and disable it
-const originalRules = Object.entries(extensionRules).map(([key]) => [delPrefix(key), "off"]);
-extensionRules = { ...Object.fromEntries(originalRules), ...extensionRules };
+// Generate the baseRules from extensionRules and disable it
+const baseRules = Object.entries(extensionRules).map(([key]) => [delPrefix(key), "off"]);
 
-// Infer options from originalRules in .eslintrc.json for the rules with "infer" as value
+// Import baseRules options
 const eslintRecommended = require(resolve(require.resolve("eslint"), "..", "..", "conf", "eslint-recommended.js"));
-const originalRulesOptions = { ...eslintRecommended, ...require(base).rules };
+const baseRulesOptions = { ...eslintRecommended.rules, ...require(base).rules };
+
+// Infer options from baseRulesOptions for the extensionRules
 const toInfer = Object.entries(extensionRules)
     .filter(([_key, val]) => val === "infer")
-    .map(([key]) => [key, originalRulesOptions[delPrefix(key)] ?? "error"]);
-extensionRules = { ...extensionRules, ...Object.fromEntries(toInfer) };
+    .map(([key]) => [key, baseRulesOptions[delPrefix(key)] ?? undefined]);
+extensionRules = { ...Object.fromEntries(baseRules), ...Object.fromEntries(toInfer) };
 
 module.exports = {
     extends: [base, "plugin:@typescript-eslint/recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking"],
