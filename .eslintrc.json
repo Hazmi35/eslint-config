@@ -168,7 +168,7 @@
         }],
         "padded-blocks": ["error", "never"],
         "padding-line-between-statements": "warn",
-        "quotes": ["warn", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
+        "quotes": ["warn", "double", { "avoidEscape": true, "allowTemplateLiterals": false }],
         "rest-spread-spacing": ["error", "never"],
         "semi": ["error", "always", { "omitLastInOneLineBlock": false }],
         "semi-spacing": ["error", { "before": false, "after": true }],
