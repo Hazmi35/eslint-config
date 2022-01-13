@@ -81,7 +81,6 @@
         "no-octal-escape": "warn",
         "no-proto": "error",
         "no-regex-spaces": "warn",
-        "no-return-assign": "error",
         "no-return-await": "off", // TODO: Please try to find a rules just like @typescript-eslint/return-await to enforce return-await. Details: https://github.com/Hazmi35/eslint-config/commit/82235225d9fe4292cca4e079cc130863f298b7fa
         "no-script-url": "warn",
         "no-sequences": "error",
