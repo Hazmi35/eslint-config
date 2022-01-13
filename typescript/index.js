@@ -57,10 +57,6 @@ let rules = {
             "constructor",
 
             // Methods
-            "public-static-method",
-            "protected-static-method",
-            "private-static-method",
-
             "public-decorated-method",
             "protected-decorated-method",
             "private-decorated-method",
@@ -77,13 +73,17 @@ let rules = {
             "protected-method",
             "private-method",
 
-            "static-method",
+            "public-static-method",
+            "protected-static-method",
+            "private-static-method",
+
+            "decorated-method",
             "instance-method",
             "abstract-method",
 
-            "decorated-method",
+            "method",
 
-            "method"
+            "static-method"
         ]
     }],
     "method-signature-style": ["warn", "property"],
