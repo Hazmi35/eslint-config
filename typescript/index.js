@@ -95,6 +95,7 @@ let rules = {
     "no-extraneous-class": "error",
     "no-invalid-void-type": "warn",
     "no-meaningless-void-operator": "warn",
+    "no-misused-promises": ["warn", { checksVoidReturn: false }],
     "no-non-null-asserted-nullish-coalescing": "warn",
     "no-non-null-asserted-optional-chain": "warn",
     "no-non-null-assertion": "off",
