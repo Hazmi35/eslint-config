@@ -87,7 +87,6 @@ let rules = {
         ]
     }],
     "method-signature-style": ["warn", "property"],
-    "naming-convention": ["warn"], // TODO: Add more strict option? (Currently, the default option is similar to ESLint's "camelCase" rule.)
     "no-base-to-string": "error",
     "no-confusing-non-null-assertion": "warn",
     "no-confusing-void-expression": ["warn", { ignoreArrowShorthand: true }],
@@ -171,6 +170,45 @@ const delPrefix = string => string.replace("@typescript-eslint/", "");
 // Prefix everything with "@typescript-eslint/""
 rules = Object.fromEntries(Object.entries(rules).map(([key, val]) => [addPrefix(key), val]));
 extensionRules = Object.fromEntries(Object.entries(extensionRules).map(([key, val]) => [addPrefix(key), val]));
+
+/*
+ * Only for @typescript-eslint/naming-convention, we need to turn off ESLint camelcase rule first.
+ * This rule will enforce the codebase to follows ESLint's camelcase conventions
+ * https://typescript-eslint.io/rules/naming-convention#enforce-the-codebase-follows-eslints-camelcase-conventions
+ */
+rules = {
+    ...rules,
+    camelcase: "off",
+    "@typescript-eslint/naming-convention": [
+        "error",
+        {
+            selector: "default",
+            format: ["camelCase"]
+        },
+
+        {
+            selector: "variable",
+            format: ["camelCase", "UPPER_CASE"]
+        },
+        {
+            selector: "parameter",
+            format: ["camelCase"],
+            leadingUnderscore: "allow"
+        },
+
+        {
+            selector: "memberLike",
+            modifiers: ["private"],
+            format: ["camelCase"],
+            leadingUnderscore: "require"
+        },
+
+        {
+            selector: "typeLike",
+            format: ["PascalCase"]
+        }
+    ]
+};
 
 // Generate the baseRules from extensionRules and disable it
 const baseRules = Object.entries(extensionRules).map(([key]) => [delPrefix(key), "off"]);
