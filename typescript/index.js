@@ -96,6 +96,7 @@ let rules = {
     "no-invalid-void-type": "warn",
     "no-meaningless-void-operator": "warn",
     "no-non-null-asserted-nullish-coalescing": "warn",
+    "no-non-null-assertion": "off",
     "no-require-imports": "warn",
     "no-unnecessary-boolean-literal-compare": "error",
     "no-unnecessary-condition": "error",
