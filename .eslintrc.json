@@ -34,7 +34,6 @@
         "consistent-return": "warn",
         "consistent-this": ["warn", "self"],
         "curly": ["error", "multi-line", "consistent"],
-        "default-case": "warn",
         "default-case-last": "warn",
         "default-param-last": "warn",
         "dot-notation": ["error", {
@@ -48,7 +47,7 @@
         "grouped-accessor-pairs": ["warn", "getBeforeSet"],
         "guard-for-in": "warn",
         "max-classes-per-file": ["error", { "max": 3 }],
-        "max-depth": ["warn", { "max": 4 }],
+        "max-depth": ["warn", { "max": 5 }],
         "max-lines": ["warn", { "max": 300, "skipBlankLines": true, "skipComments": true }],
         "max-nested-callbacks": ["warn", { "max": 10 }],
         "max-params": ["warn", { "max": 6 }],
