@@ -21,10 +21,6 @@ let rules = {
             "signature",
 
             // Fields
-            "public-static-field",
-            "protected-static-field",
-            "private-static-field",
-
             "public-decorated-field",
             "protected-decorated-field",
             "private-decorated-field",
@@ -41,13 +37,17 @@ let rules = {
             "protected-field",
             "private-field",
 
-            "static-field",
+            "public-static-field",
+            "protected-static-field",
+            "private-static-field",
+
+            "decorated-field",
             "instance-field",
             "abstract-field",
 
-            "decorated-field",
-
             "field",
+
+            "static-field",
 
             // Constructors
             "public-constructor",
