@@ -187,29 +187,14 @@ rules = {
         "error",
         {
             selector: "default",
-            format: ["camelCase"]
+            format: ["camelCase", "PascalCase"],
+            leadingUnderscore: "allow",
+            trailingUnderscore: "forbid"
         },
-
         {
             selector: "variable",
-            format: ["camelCase", "UPPER_CASE"]
-        },
-        {
-            selector: "parameter",
-            format: ["camelCase"],
-            leadingUnderscore: "allow"
-        },
-
-        {
-            selector: "memberLike",
-            modifiers: ["private"],
-            format: ["camelCase"],
-            leadingUnderscore: "require"
-        },
-
-        {
-            selector: "typeLike",
-            format: ["PascalCase"]
+            modifiers: ["destructured"],
+            format: null
         }
     ]
 };
