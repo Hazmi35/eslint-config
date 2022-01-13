@@ -105,6 +105,7 @@ let rules = {
     "no-unnecessary-type-arguments": "error",
     "no-unsafe-assignment": "off",
     "no-unsafe-call": "warn",
+    "no-unsafe-member-access": "warn",
     "no-unsafe-return": "off",
     "non-nullable-type-assertion-style": "warn",
     "prefer-enum-initializers": "warn",
