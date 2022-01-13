@@ -105,7 +105,7 @@ let rules = {
     "no-unsafe-call": "warn",
     "no-unsafe-return": "off",
     "non-nullable-type-assertion-style": "warn",
-    "prefer-enum-initializers": "warn", // TODO: Reconsider of severity of these prefer rules (warn or error)
+    "prefer-enum-initializers": "warn",
     "prefer-for-of": "warn",
     "prefer-function-type": "warn",
     "prefer-includes": "warn",
