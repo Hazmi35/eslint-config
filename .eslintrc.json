@@ -80,7 +80,6 @@
         "no-nested-ternary": "warn",
         "no-new-func": "warn",
         "no-octal-escape": "warn",
-        "no-param-reassign": "warn",
         "no-proto": "error",
         "no-regex-spaces": "warn",
         "no-return-assign": "error",
