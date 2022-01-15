@@ -89,7 +89,6 @@ let rules = {
     "method-signature-style": ["warn", "property"],
     "no-base-to-string": "error",
     "no-confusing-non-null-assertion": "warn",
-    "no-confusing-void-expression": ["warn", { ignoreArrowShorthand: true }],
     "no-dynamic-delete": "error",
     "no-explicit-any": "off",
     "no-extraneous-class": "error",
