@@ -1,4 +1,8 @@
 /* eslint-env node */
 const { resolve } = require("path");
+const { readFileSync } = require("fs");
+const stripJsonComments = require("strip-json-comments");
 
-module.exports = require(resolve(__dirname, ".eslintrc.json"));
+const file = readFileSync(resolve(__dirname, ".eslintrc.json")).toString();
+
+module.exports = JSON.parse(stripJsonComments(file));
