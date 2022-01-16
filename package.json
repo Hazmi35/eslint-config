@@ -20,7 +20,7 @@
     "lint": "eslint --ignore-path .gitignore ."
   },
   "dependencies": {
-    "strip-json-comments": "^3.1.1"
+    "strip-json-comments": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.8",
