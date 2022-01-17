@@ -141,7 +141,14 @@
         "keyword-spacing": ["warn", { "before": true, "after": true }],
         "linebreak-style": ["error", "unix"],
         "lines-between-class-members": ["warn", "always", { "exceptAfterSingleLine": true }],
-        "max-len": ["warn", { "code": 180, "tabWidth": 4 }],
+        "max-len": ["warn", {
+            "code": 180,
+            "tabWidth": 4,
+            "ignoreUrls": true,
+            "ignoreStrings": true,
+            "ignoreTemplateLiterals": true,
+            "ignoreRegExpLiterals": true
+        }],
         "max-statements-per-line": ["warn", { "max": 3 }],
         "multiline-ternary": ["warn", "always-multiline"],
         "new-parens": "warn",
