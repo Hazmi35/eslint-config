@@ -19,6 +19,7 @@ jobs:
       uses: actions/setup-node@v2.5.1
       with:
         node-version-file: .node-version
+        cache: "npm"
         check-latest: true
 
     - name: Install dependencies
