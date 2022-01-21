@@ -5,26 +5,28 @@ on:
     types: [created]
 
 jobs:
-  publish-npm:
+  publish:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - registry: https://registry.npmjs.org/
+            token_secret_key: NPM_TOKEN
+          - registry: https://npm.pkg.github.com/
+            token_secret_key: GITHUB_TOKEN
     steps:
-      - uses: actions/checkout@v2.4.0
-      - uses: actions/setup-node@v2.5.1
+      - name: Checkout repository
+        uses: actions/checkout@v2.4.0
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.5.1
         with:
           node-version-file: .node-version
-          registry-url: https://registry.npmjs.org/
-      - run: npm publish --access public
+          cache: 'npm'
+          check-latest: true
+          registry-url: ${{ matrix.registry }}
+      #- name: Build TypeScript project
+      #  run: npm ci && npm run build
+      - name: Publish package to npm and GitHub packages registry
+        run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-
-  publish-gpr:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2.4.0
-      - uses: actions/setup-node@v2.5.1
-        with:
-          node-version-file: .node-version
-          registry-url: https://npm.pkg.github.com/
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{ secrets[matrix.token_secret_key] }}
