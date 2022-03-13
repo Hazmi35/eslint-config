@@ -124,7 +124,8 @@ let rules = {
     "switch-exhaustiveness-check": "error",
     "type-annotation-spacing": "warn",
     "unified-signatures": "warn",
-    "no-useless-empty-export": "warn"
+    "no-useless-empty-export": "warn",
+    "no-redundant-type-constituents": "error"
 };
 
 /*
