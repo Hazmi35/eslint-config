@@ -164,7 +164,8 @@ let extensionRules = {
     "return-await": "warn",
     semi: "infer",
     "space-before-function-paren": "infer",
-    "space-infix-ops": "infer"
+    "space-infix-ops": "infer",
+    "space-before-blocks": "infer"
 };
 
 const addPrefix = string => `@typescript-eslint/${string}`;
