@@ -85,7 +85,7 @@ module.exports = {
         "no-return-await": "off",
         "no-script-url": "warn",
         "no-sequences": "error",
-        "no-shadow": "error",
+        "no-shadow": ["error", { ignoreOnInitialization: true }],
         "no-throw-literal": "error",
         "no-undef-init": "warn",
         "no-unneeded-ternary": "warn",
