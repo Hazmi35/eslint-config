@@ -123,7 +123,8 @@ let rules = {
     "sort-type-union-intersection-members": "warn",
     "switch-exhaustiveness-check": "error",
     "type-annotation-spacing": "warn",
-    "unified-signatures": "warn"
+    "unified-signatures": "warn",
+    "no-useless-empty-export": "warn"
 };
 
 /*
