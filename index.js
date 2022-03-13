@@ -56,6 +56,7 @@ module.exports = {
         "no-array-constructor": "warn",
         "no-caller": "error",
         "no-case-declarations": "error",
+        "no-confusing-arrow": ["warn", { onlyOneSimpleParam: true }],
         "no-else-return": "error",
         "no-empty": "warn",
         "no-empty-function": "warn",
