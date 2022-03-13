@@ -22,7 +22,7 @@ module.exports = {
             argsIgnorePattern: "^_",
             args: "after-used",
             caughtErrors: "all",
-            caughtErrorsIgnorePattern: "^_"
+            destructuredArrayIgnorePattern: "^_"
         }],
         "no-use-before-define": ["error", { functions: false }],
 
