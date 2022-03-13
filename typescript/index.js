@@ -192,8 +192,13 @@ rules = {
         },
         {
             selector: "variable",
-            modifiers: ["destructured"],
-            format: null
+            format: null,
+            modifiers: ["destructured"]
+        },
+        {
+            selector: "default",
+            format: null,
+            modifiers: ["requiresQuotes"]
         }
     ]
 };
