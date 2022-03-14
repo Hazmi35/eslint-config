@@ -153,10 +153,10 @@ let extensionRules = {
     "no-loop-func": "infer",
     "no-loss-of-precision": "infer",
     "no-redeclare": "infer",
-    "no-shadow": "infer",
+    "no-shadow": ["infer", ["ignoreOnInitialization"]], // TODO: no-shadow and no-unused-vars has some options ommited from the base rules because typescript-eslint doesn't support it yet.
     "no-throw-literal": "infer",
     "no-unused-expressions": "infer",
-    "no-unused-vars": "infer",
+    "no-unused-vars": ["infer", ["destructuredArrayIgnorePattern"]],
     "no-use-before-define": "infer",
     "no-useless-constructor": "infer",
     "object-curly-spacing": "infer",
@@ -215,8 +215,25 @@ const baseRulesOptions = { ...eslintRecommended.rules, ...require(base).rules };
 
 // Infer options from baseRulesOptions for the extensionRules
 const doneInferred = Object.entries(extensionRules)
-    .filter(([_key, val]) => val === "infer")
-    .map(([key]) => [key, baseRulesOptions[delPrefix(key)] ?? undefined]);
+    .filter(([_key, val]) => {
+        if (val instanceof Array) return val.shift() === "infer";
+        return val === "infer";
+    })
+    .map(([key, val]) => {
+        let rulesOptions = baseRulesOptions[delPrefix(key)];
+        /*
+         * This is a handler to omit some options from baseRulesOptions.
+         * For example in ["infer", ["ignoreOnInitialization"]], ignoreOnInitialization option from baseRule will be ommited on the extensionRules
+         */
+        if (val instanceof Array) {
+            const ruleSeverity = rulesOptions[0];
+            const ruleOptions = rulesOptions[1];
+            const ommitedRuleOptions = val[0];
+            const omittedRuleOptionsDone = Object.fromEntries(Object.entries(ruleOptions).filter(([k]) => !ommitedRuleOptions.includes(k)));
+            rulesOptions = [ruleSeverity, omittedRuleOptionsDone];
+        }
+        return [key, rulesOptions ?? undefined];
+    });
 
 // Handle if there is undefined
 const inferredButUndefined = doneInferred.filter(([_, v]) => v === undefined);
