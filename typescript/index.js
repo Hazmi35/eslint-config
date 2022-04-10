@@ -153,7 +153,7 @@ let extensionRules = {
     "no-loop-func": "infer",
     "no-loss-of-precision": "infer",
     "no-redeclare": "infer",
-    "no-shadow": ["infer", ["ignoreOnInitialization"]], // TODO: no-shadow and no-unused-vars has some options ommited from the base rules because typescript-eslint doesn't support it yet.
+    "no-shadow": "infer",
     "no-throw-literal": "infer",
     "no-unused-expressions": "infer",
     "no-unused-vars": "infer",
