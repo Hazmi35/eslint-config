@@ -156,7 +156,7 @@ let extensionRules = {
     "no-shadow": ["infer", ["ignoreOnInitialization"]], // TODO: no-shadow and no-unused-vars has some options ommited from the base rules because typescript-eslint doesn't support it yet.
     "no-throw-literal": "infer",
     "no-unused-expressions": "infer",
-    "no-unused-vars": ["infer", ["destructuredArrayIgnorePattern"]],
+    "no-unused-vars": "infer",
     "no-use-before-define": "infer",
     "no-useless-constructor": "infer",
     "object-curly-spacing": "infer",
