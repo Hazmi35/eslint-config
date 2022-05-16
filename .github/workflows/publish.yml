@@ -17,6 +17,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3.0.0
+
       - name: Setup Node.js
         uses: actions/setup-node@v3.1.0
         with:
@@ -24,8 +25,13 @@ jobs:
           cache: 'npm'
           check-latest: true
           registry-url: ${{ matrix.registry }}
-      #- name: Build TypeScript project
-      #  run: npm ci && npm run build
+        
+      #- name: Install dependencies
+      #  run: npm ci
+
+      #- name: Compile/Build TypeScript project
+      #  run: npm run build
+
       - name: Publish package to npm and GitHub packages registry
         run: npm publish --access public
         env:
