@@ -51,7 +51,7 @@ module.exports = {
         "max-lines": ["warn", { max: 300, skipBlankLines: true, skipComments: true }],
         "max-nested-callbacks": ["warn", { max: 10 }],
         "max-params": ["warn", { max: 6 }],
-        "multiline-comment-style": ["warn", "starred-block"],
+        "multiline-comment-style": ["warn", "bare-block"],
         "no-alert": "warn",
         "no-array-constructor": "warn",
         "no-caller": "error",
