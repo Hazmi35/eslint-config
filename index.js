@@ -57,6 +57,7 @@ module.exports = {
         "no-caller": "error",
         "no-case-declarations": "error",
         "no-confusing-arrow": ["warn", { onlyOneSimpleParam: true }],
+        "no-constant-binary-expression": "warn",
         "no-else-return": "error",
         "no-empty": "warn",
         "no-empty-function": "warn",
