@@ -25,16 +25,23 @@ Example:
 	"extends": "@hazmi35/eslint-config"
 }
 ```
-or `"@hazmi35/eslint-config/node"` for Node environment
+Use `@hazmi35/eslint-config/node` for Node environment
 
 
 Example (TS):
 ```json
 {
-    "extends": "@hazmi35/eslint-config/typescript"
+    "extends": "@hazmi35/eslint-config/typescript",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "ignorePatterns": [
+      "dist/**",
+      "node_modules/**"
+    ]
 }
 ```
-or `"@hazmi35/eslint-config/typescript/node"` for Node environment
+Use `@hazmi35/eslint-config/typescript/node` for Node environment
 
 ## Note
 
