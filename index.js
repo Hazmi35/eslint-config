@@ -157,7 +157,7 @@ module.exports = {
         "multiline-ternary": ["warn", "always-multiline"],
         "new-parens": "warn",
         "newline-per-chained-call": ["warn", { ignoreChainWithDepth: 3 }],
-        "no-extra-parens": ["warn", "all", { nestedBinaryExpressions: false }],
+        "no-extra-parens": ["warn", "all", { nestedBinaryExpressions: false, enforceForArrowConditionals: false }],
         "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
         "no-multi-spaces": ["error", { ignoreEOLComments: true }],
         "no-multiple-empty-lines": "warn",
