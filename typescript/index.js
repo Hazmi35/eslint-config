@@ -129,10 +129,8 @@ let rules = {
     "no-redundant-type-constituents": "error"
 };
 
-/*
- * @typescript-eslint extension rules are rules that is extended from eslint original rules
- * "infer" as value here will be modified to be inferred from baseRules
- */
+/* @typescript-eslint extension rules are rules that is extended from eslint original rules
+   "infer" as value here will be modified to be inferred from baseRules */
 let extensionRules = {
     "brace-style": "infer",
     "comma-dangle": "infer",
@@ -178,11 +176,9 @@ const delPrefix = string => string.replace("@typescript-eslint/", "");
 rules = Object.fromEntries(Object.entries(rules).map(([key, val]) => [addPrefix(key), val]));
 extensionRules = Object.fromEntries(Object.entries(extensionRules).map(([key, val]) => [addPrefix(key), val]));
 
-/*
- * Only for @typescript-eslint/naming-convention, we need to turn off ESLint camelcase rule first.
- * This rule will enforce the codebase to follows ESLint's camelcase conventions
- * https://typescript-eslint.io/rules/naming-convention#enforce-the-codebase-follows-eslints-camelcase-conventions
- */
+/* Only for @typescript-eslint/naming-convention, we need to turn off ESLint camelcase rule first.
+   This rule will enforce the codebase to follows ESLint's camelcase conventions
+   https://typescript-eslint.io/rules/naming-convention#enforce-the-codebase-follows-eslints-camelcase-conventions */
 rules = {
     ...rules,
     camelcase: "off",
@@ -222,10 +218,8 @@ const doneInferred = Object.entries(extensionRules)
     })
     .map(([key, val]) => {
         let rulesOptions = baseRulesOptions[delPrefix(key)];
-        /*
-         * This is a handler to omit some options from baseRulesOptions.
-         * For example in ["infer", ["ignoreOnInitialization"]], ignoreOnInitialization option from baseRule will be ommited on the extensionRules
-         */
+        /* This is a handler to omit some options from baseRulesOptions.
+           For example in ["infer", ["ignoreOnInitialization"]], ignoreOnInitialization option from baseRule will be ommited on the extensionRules */
         if (val instanceof Array) {
             const ruleSeverity = rulesOptions[0];
             const ruleOptions = rulesOptions[1];
