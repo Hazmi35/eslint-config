@@ -7,6 +7,7 @@ let rules = {
     "array-type": ["warn", { default: "array" }],
     "ban-ts-comment": ["error", { minimumDescriptionLength: 5 }],
     "ban-tslint-comment": "error",
+    "consistent-generic-constructor": ["warn", "constructor"],
     "consistent-indexed-object-style": ["error", "record"],
     "consistent-type-assertions": ["error", { assertionStyle: "as", objectLiteralTypeAssertions: "allow-as-parameter" }],
     "consistent-type-definitions": ["error", "interface"],
