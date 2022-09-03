@@ -112,7 +112,7 @@ let rules = {
     "prefer-for-of": "warn",
     "prefer-function-type": "warn",
     "prefer-includes": "warn",
-    "prefer-nullish-coalescing": "warn",
+    "prefer-nullish-coalescing": ["warn", { ignoreTernaryTests: false }],
     "prefer-optional-chain": "warn",
     "prefer-readonly": "warn",
     "prefer-reduce-type-parameter": "warn",
