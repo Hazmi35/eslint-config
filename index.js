@@ -13,6 +13,7 @@ module.exports = {
         "getter-return": ["error", { allowImplicit: false }],
         "no-constructor-return": "error",
         "no-duplicate-imports": "warn",
+        "no-new-native-nonconstructor": "error",
         "no-self-compare": "error",
         "no-template-curly-in-string": "error",
         "no-unmodified-loop-condition": "error",
