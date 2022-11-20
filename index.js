@@ -47,6 +47,7 @@ module.exports = {
         "func-style": ["warn", "declaration", { allowArrowFunctions: true }],
         "grouped-accessor-pairs": ["warn", "getBeforeSet"],
         "guard-for-in": "warn",
+        "logical-assignment-operators": ["warn", "always"],
         "max-classes-per-file": ["error", { max: 3 }],
         "max-depth": ["warn", { max: 5 }],
         "max-lines": ["warn", { max: 300, skipBlankLines: true, skipComments: true }],
