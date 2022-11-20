@@ -62,6 +62,7 @@ module.exports = {
         "no-else-return": "error",
         "no-empty": "warn",
         "no-empty-function": "warn",
+        "no-empty-static-block": "warn",
         "no-eq-null": "warn",
         "no-eval": "warn",
         "no-extend-native": "error",
