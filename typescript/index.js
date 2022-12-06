@@ -16,10 +16,11 @@ let rules = {
     "explicit-function-return-type": ["error", { allowExpressions: true }],
     "explicit-member-accessibility": ["warn", { accessibility: "explicit" }],
     "member-delimiter-style": "error",
-    "member-ordering": ["warn", {
+    "member-ordering": ["warn", { // TODO: Revamp this rule
         default: [
             // Index signature
             "signature",
+            "call-signature",
 
             // Fields
             "public-decorated-field",
@@ -29,18 +30,20 @@ let rules = {
             "public-instance-field",
             "protected-instance-field",
             "private-instance-field",
+            "#private-instance-field",
 
             "public-abstract-field",
             "protected-abstract-field",
-            "private-abstract-field",
 
             "public-field",
             "protected-field",
             "private-field",
+            "#private-field",
 
             "public-static-field",
             "protected-static-field",
             "private-static-field",
+            "#private-static-field",
 
             "decorated-field",
             "instance-field",
@@ -65,18 +68,20 @@ let rules = {
             "public-instance-method",
             "protected-instance-method",
             "private-instance-method",
+            "#private-instance-method",
 
             "public-abstract-method",
             "protected-abstract-method",
-            "private-abstract-method",
 
             "public-method",
             "protected-method",
             "private-method",
+            "#private-method",
 
             "public-static-method",
             "protected-static-method",
             "private-static-method",
+            "#private-static-method",
 
             "decorated-method",
             "instance-method",
