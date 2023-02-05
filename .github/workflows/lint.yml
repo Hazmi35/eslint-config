@@ -10,20 +10,5 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3.1.0
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v3.5.1
-      with:
-        node-version-file: .node-version
-        cache: "npm"
-        check-latest: true
-
-    - name: Install dependencies
-      run: npm ci
-
-    - name: Lint code
-      run: npm run lint
+    uses: Hazmi35/workflows/.github/workflows/npm-eslint.yml@master
+    secrets: inherit
