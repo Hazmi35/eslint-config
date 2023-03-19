@@ -19,7 +19,7 @@
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix",
-    "release": "pnpm publish --access public"
+    "release": "pnpm publish --access public --no-git-checks"
   },
   "eslintConfig": {
     "extends": "./index.js"
