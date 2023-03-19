@@ -14,7 +14,11 @@ let rules = {
     "consistent-type-definitions": ["error", "interface"],
     "consistent-type-exports": ["warn", { fixMixedExportsWithInlineTypeSpecifier: false }],
     "consistent-type-imports": ["warn", { prefer: "no-type-imports" }],
-    "explicit-function-return-type": ["error", { allowExpressions: true }],
+    "explicit-function-return-type": ["error", {
+        allowExpressions: true,
+        allowTypedFunctionExpressions: true,
+        allowDirectConstAssertionInArrowFunctions: true
+    }],
     "explicit-member-accessibility": ["warn", { accessibility: "explicit" }],
     "member-delimiter-style": "error",
     "member-ordering": ["warn", { // TODO: Revamp this rule
