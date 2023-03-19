@@ -1,6 +1,7 @@
 /* eslint-env node */
 const { resolve } = require("path");
 const base = resolve(__dirname, "..", "index.js");
+const eslintJS = require("@eslint/js");
 
 // @typescript-eslint original rules
 let rules = {
@@ -214,8 +215,7 @@ rules = {
 const baseRules = Object.entries(extensionRules).map(([key]) => [delPrefix(key), "off"]);
 
 // Import baseRules options
-const eslintRecommended = require(resolve(require.resolve("eslint"), "..", "..", "conf", "eslint-recommended.js"));
-const baseRulesOptions = { ...eslintRecommended.rules, ...require(base).rules };
+const baseRulesOptions = { ...eslintJS.configs.recommended.rules, ...require(base).rules };
 
 // Infer options from baseRulesOptions for the extensionRules
 const doneInferred = Object.entries(extensionRules)
