@@ -1,0 +1,10 @@
+name: Release package to NPM & GitHub registry
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  publish:
+    uses: Hazmi35/workflows/.github/workflows/pnpm-publish.yml@master
+    secrets: inherit
