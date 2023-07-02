@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -10,7 +10,7 @@ devDependencies:
     version: 8.42.0
   '@types/node':
     specifier: '*'
-    version: 0.0.0
+    version: 20.3.3
   '@typescript-eslint/eslint-plugin':
     specifier: '>=5.59.11'
     version: 5.59.11(@typescript-eslint/parser@5.59.11)(eslint@8.42.0)(typescript@3.3.1)
@@ -108,8 +108,8 @@ packages:
     resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==}
     dev: true
 
-  /@types/node@0.0.0:
-    resolution: {integrity: sha512-WTVTibPZsmWNm4thlkPnc0QPbT4+Vw+48e4otLxwdBVZduwrZ2pDvAH9dnpOe/fQnNl84PO4XOq3dHAyjaornA==}
+  /@types/node@20.3.3:
+    resolution: {integrity: sha512-wheIYdr4NYML61AjC8MKj/2jrR/kDQri/CIpVoZwldwhnIrD/j9jIU5bJ8yBKuB2VhpFV7Ab6G2XkBjv9r9Zzw==}
     dev: true
 
   /@types/semver@7.5.0:
