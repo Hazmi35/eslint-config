@@ -134,7 +134,6 @@ let rules = {
     "prefer-string-starts-ends-with": "warn",
     "prefer-ts-expect-error": "error",
     "restrict-template-expressions": ["warn", { allowBoolean: true, allowNumber: true }],
-    "sort-type-union-intersection-members": "warn",
     "switch-exhaustiveness-check": "error",
     "type-annotation-spacing": "warn",
     "unified-signatures": "warn",
@@ -255,7 +254,7 @@ if (inferredButUndefined.length !== 0) {
 extensionRules = { ...Object.fromEntries(baseRules), ...extensionRules, ...Object.fromEntries(doneInferred) };
 
 module.exports = {
-    extends: [base, "plugin:@typescript-eslint/recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking"],
+    extends: [base, "plugin:@typescript-eslint/recommended", "plugin:@typescript-eslint/recommended-type-checked"],
     parserOptions: {
         project: "./tsconfig.json"
     },
