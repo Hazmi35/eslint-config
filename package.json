@@ -25,18 +25,18 @@
     "extends": "./index.js"
   },
   "devDependencies": {
-    "@eslint/js": ">=8.42.0",
+    "@eslint/js": ">=8.46.0",
     "@types/node": "*",
     "@typescript-eslint/eslint-plugin": ">=5.59.11",
     "@typescript-eslint/parser": ">=5.59.11",
-    "eslint": ">=8.42.0",
+    "eslint": ">=8.46.0",
     "typescript": ">=3.3.1 <5.1.0"
   },
   "peerDependencies": {
-    "@eslint/js": ">=8.42.0",
+    "@eslint/js": ">=8.46.0",
     "@typescript-eslint/eslint-plugin": ">=5.59.11",
     "@typescript-eslint/parser": ">=5.59.11",
-    "eslint": ">=8.42.0",
+    "eslint": ">=8.46.0",
     "typescript": ">=3.3.1 <5.1.0"
   },
   "peerDependenciesMeta": {
