@@ -45,9 +45,9 @@ Use `@hazmi35/eslint-config/typescript/node` for Node environment
 
 ## Note
 
-Requires [ESLint](https://npmjs.com/package/eslint) version 8.42.0 or above
+Requires [ESLint](https://npmjs.com/package/eslint) version 8.46.0 or above
 
 TypeScript config requires:
- * [@typescript-eslint/parser](https://npmjs.com/package/@typescript-eslint/parser) version 5.59.11 or above
- * [@typescript-eslint/eslint-plugin](https://npmjs.com/package/@typescript-eslint/eslint-plugin) version 5.59.11 or above
- * [typescript](https://npmjs.com/package/typescript) version 3.3.1 to 5.1.0
+ * [@typescript-eslint/parser](https://npmjs.com/package/@typescript-eslint/parser) version 6.3.0 or above
+ * [@typescript-eslint/eslint-plugin](https://npmjs.com/package/@typescript-eslint/eslint-plugin) version 6.3.0 or above
+ * [typescript](https://npmjs.com/package/typescript) version 4.3.5 to 5.2.0
