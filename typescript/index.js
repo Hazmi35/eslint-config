@@ -155,7 +155,6 @@ let extensionRules = {
     "lines-between-class-members": "infer",
     "no-array-constructor": "infer",
     "no-dupe-class-members": "infer",
-    "no-duplicate-imports": "infer",
     "no-empty-function": "infer",
     "no-extra-parens": "infer",
     "no-extra-semi": "infer",
