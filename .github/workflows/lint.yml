@@ -10,5 +10,5 @@ on:
 
 jobs:
   lint:
-    uses: Hazmi35/workflows/.github/workflows/pnpm-eslint.yml@master
+    uses: Hazmi35/workflows/.github/workflows/pnpm-eslint.yaml@master
     secrets: inherit
