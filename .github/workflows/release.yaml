@@ -6,5 +6,15 @@ on:
 
 jobs:
   publish:
+    strategy:
+      matrix:
+        include:
+          - registry-url: 'https://registry.npmjs.com'
+            registry-token-key: 'NPM_TOKEN'
+          - registry-url: 'https://npm.pkg.github.com'
+            registry-token-key: 'GITHUB_TOKEN'
     uses: Hazmi35/workflows/.github/workflows/pnpm-publish.yaml@master
-    secrets: inherit
+    with:
+      registry-url: ${{ matrix.registry-url }}
+    secrets:
+      NODE_AUTH_TOKEN: ${{ secrets[matrix.registry-token-key] }}
