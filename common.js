@@ -13,7 +13,7 @@ export default [
         rules: {
             // Possible Errors
             "array-callback-return": "error",
-            "no-await-in-for-loop": "warn",
+            "no-await-in-loop": "warn",
             "no-constant-binary-expression": "error",
             "no-constructor-return": "error",
             "no-duplicate-imports": "error",
