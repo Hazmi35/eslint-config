@@ -15,14 +15,12 @@
   "repository": "https://github.com/Hazmi35/eslint-config",
   "license": "MIT",
   "author": "Hazmi35 <contact@hzmi.xyz>",
-  "main": "index.js",
+  "type": "module",
+  "main": "src/common.js",
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore .",
-    "lint:fix": "eslint --ignore-path .gitignore . --fix",
+    "lint": "eslint  .",
+    "lint:fix": "eslint . --fix",
     "release": "pnpm publish --access public --no-git-checks"
-  },
-  "eslintConfig": {
-    "extends": "./index.js"
   },
   "devDependencies": {
     "@eslint/js": ">=8.56.0",
