@@ -8,6 +8,9 @@ devDependencies:
   '@eslint/js':
     specifier: '>=8.56.0'
     version: 8.56.0
+  '@tsconfig/node-lts':
+    specifier: ^20.1.1
+    version: 20.1.1
   '@types/node':
     specifier: '*'
     version: 20.11.5
@@ -107,6 +110,10 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.16.0
+    dev: true
+
+  /@tsconfig/node-lts@20.1.1:
+    resolution: {integrity: sha512-V7wHydi1dv8I8xiOX3pJ0lhC+MlOakznvLks94J6y/TqQK6DBcbdD1G4jEq8yU+s6lBASPn4e1Ci636fDqeyvQ==}
     dev: true
 
   /@types/json-schema@7.0.15:
