@@ -257,6 +257,12 @@ export default [
             "unicorn/require-post-message-target-origin": "warn",
             "unicorn/prefer-module": "off", // Add @hazmi35/eslint-config/modules config
             "unicorn/prefer-node-protocol": "off", // Add @hazmi35/eslint-config/node config
+            "unicorn/filename-case": ["warn", {
+                cases: {
+                    camelCase: true,
+                    pascalCase: true
+                }
+            }],
 
             // Promise Rules
             "promise/always-return": "error",
