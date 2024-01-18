@@ -10,6 +10,12 @@ export default [
         linterOptions: {
             reportUnusedDisableDirectives: "warn"
         },
+        parserOptions: {
+            ecmaFeatures: {
+                globalReturn: false,
+                impliedStrict: true,
+            }
+        },
         rules: {
             // Possible Errors
             "array-callback-return": "error",
