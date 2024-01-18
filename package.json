@@ -18,7 +18,7 @@
   "type": "module",
   "main": "src/common.js",
   "scripts": {
-    "lint": "eslint  .",
+    "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "release": "pnpm publish --access public --no-git-checks"
   },
