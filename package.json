@@ -30,6 +30,7 @@
     "@typescript-eslint/parser": ">=6.19.0",
     "eslint": ">=8.56.0",
     "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsdoc": "^48.0.2",
     "typescript": ">=4.3.5 <5.4.0"
   },
   "peerDependencies": {
@@ -38,6 +39,7 @@
     "@typescript-eslint/parser": ">=6.19.0",
     "eslint": ">=8.56.0",
     "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsdoc": "^48.0.2",
     "typescript": ">=4.3.5 <5.4.0"
   },
   "peerDependenciesMeta": {

@@ -17,7 +17,8 @@ export default [
             reportUnusedDisableDirectives: "warn"
         },
         plugins: {
-            import: await import("eslint-plugin-import")
+            import: await import("eslint-plugin-import"),
+            jsdoc: await import("eslint-plugin-jsdoc"),
         },
         rules: {
             // Possible Errors
@@ -198,7 +199,45 @@ export default [
                     "newlines-between": "never",
                 }
             ],
-            
+
+            // JSDoc Rules
+            "jsdoc/check-access": "error",
+            "jsdoc/check-alignment": "error",
+            "jsdoc/check-param-names": "error",
+            "jsdoc/check-property-names": "error",
+            "jsdoc/check-syntax": "error",
+            "jsdoc/check-tag-names": "error",
+            "jsdoc/check-types": "error",
+            "jsdoc/check-values": "error",
+            "jsdoc/empty-tags": "error",
+            "jsdoc/implements-on-classes": "error",
+            "jsdoc/multiline-blocks": [
+                "error",
+                {
+                    noMultilineBlocks: false,
+                    noSingleLineBlocks: true,
+                },
+            ],
+            "jsdoc/no-bad-blocks": "error",
+            "jsdoc/no-blank-blocks": "error",
+            "jsdoc/no-blank-block-descriptions": "error",
+            "jsdoc/no-defaults": "error",
+            "jsdoc/no-multi-asterisks": "error",
+            "jsdoc/no-undefined-types": "error",
+            "jsdoc/require-asterisk-prefix": "error",
+            "jsdoc/require-param-name": "error",
+            "jsdoc/require-property": "error",
+            "jsdoc/require-property-description": "error",
+            "jsdoc/require-property-name": "error",
+            "jsdoc/require-property-type": "error",
+            "jsdoc/tag-lines": [
+                "error",
+                "never",
+                {
+                    startLines: 1,
+                },
+            ],
+            "jsdoc/valid-types": "error",
         },
 
         settings: {
