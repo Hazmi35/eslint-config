@@ -2,11 +2,11 @@ import js from "@eslint/js";
 import importPlugin from "eslint-plugin-import";
 import jsdoc from "eslint-plugin-jsdoc";
 import unicorn from "eslint-plugin-unicorn";
+import promise from "eslint-plugin-promise";
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     js.configs.recommended,
-    unicorn.configs["flat/recommended"],
     {
         languageOptions: {
             ecmaVersion: "latest",
@@ -23,6 +23,8 @@ export default [
         plugins: {
             import: importPlugin,
             jsdoc,
+            unicorn,
+            promise
         },
         rules: {
             // Possible Errors
@@ -106,9 +108,7 @@ export default [
             "no-multi-assign": ["warn", { ignoreNonDeclaration: true }],
             "no-multi-str": "warn",
             "no-negated-condition": "off", // Handled by unicorn/no-negated-condition
-            "unicorn/no-negated-condition": "error",
-            "no-nested-ternary": "off",
-            "unicorn/no-nested-ternary": "error", // Handled by unicorn/no-nested-ternary
+            "no-nested-ternary": "off",  // Handled by unicorn/no-nested-ternary
             "no-new-func": "error",
             "no-new-wrappers": "error",
             "no-object-constructor": "error",
@@ -245,10 +245,28 @@ export default [
             ],
             "jsdoc/valid-types": "error",
 
-            // Unicorn Rules
+            // Unicorn Rules (Most of them enabled from recommended rules)
+            ...unicorn.configs["flat/recommended"].rules,
             "unicorn/custom-error-definition": "warn",
             "unicorn/no-unused-properties": "warn",
+            "unicorn/no-negated-condition": "error",
+            "unicorn/no-nested-ternary": "error",
             "unicorn/require-post-message-target-origin": "warn",
+
+            // Promise Rules
+            "promise/always-return": "error",
+            "promise/catch-or-return": "error",
+            "promise/no-callback-in-promise": "warn",
+            "promise/no-multiple-resolved": "error",
+            "promise/no-nesting": "warn",
+            "promise/no-new-statics": "error",
+            "promise/no-promise-in-callback": "warn",
+            "promise/no-return-in-finally": "off",
+            "promise/no-return-wrap": "error",
+            "promise/param-names": "warn",
+            "promise/prefer-await-to-callbacks": "warn",
+            "promise/prefer-await-to-then": "error",
+            "promise/valid-params": "error"
         },
 
         settings: {
