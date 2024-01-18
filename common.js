@@ -3,6 +3,7 @@ import importPlugin from "eslint-plugin-import";
 import jsdoc from "eslint-plugin-jsdoc";
 import promise from "eslint-plugin-promise";
 import unicorn from "eslint-plugin-unicorn";
+import globals from "globals";
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
@@ -10,12 +11,15 @@ export default [
     {
         languageOptions: {
             ecmaVersion: "latest",
+            globals: {
+                ...globals.es2021
+            },
             parserOptions: {
                 ecmaFeatures: {
                     globalReturn: false,
                     impliedStrict: true,
                 }
-            }
+            },
         },
         linterOptions: {
             reportUnusedDisableDirectives: "warn"

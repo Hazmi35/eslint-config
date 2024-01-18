@@ -1,5 +1,12 @@
+import globals from "globals";
+
 export default [
     {
+        languageOptions: {
+            globals: {
+                ...globals.node,
+            }
+        },
         rules: {
             // "import/extensions": "off", // TODO: Check if this needed
             "no-restricted-globals": "off",

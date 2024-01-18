@@ -1,15 +1,18 @@
-import n from "eslint-plugin-n";
+import node from "eslint-plugin-n";
+import globals from "globals";
 
 export default [
     {
         languageOptions: {
-            globals: n.configs["recommended-module"].globals,
+            globals: {
+                ...globals.node,
+            },
             parserOptions: {
                 globalReturn: true
             }
         },
         plugins: {
-            n
+            n: node
         },
         rules: {
             "no-restricted-globals": [
