@@ -1,10 +1,12 @@
 import js from "@eslint/js";
 import importPlugin from "eslint-plugin-import";
 import jsdoc from "eslint-plugin-jsdoc";
+import unicorn from "eslint-plugin-unicorn";
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     js.configs.recommended,
+    unicorn.configs["flat/recommended"],
     {
         languageOptions: {
             ecmaVersion: "latest",
@@ -103,8 +105,10 @@ export default [
             "no-loop-func": "error",
             "no-multi-assign": ["warn", { ignoreNonDeclaration: true }],
             "no-multi-str": "warn",
-            "no-negated-condition": "error",
-            "no-nested-ternary": "error",
+            "no-negated-condition": "off", // Handled by unicorn/no-negated-condition
+            "unicorn/no-negated-condition": "error",
+            "no-nested-ternary": "off",
+            "unicorn/no-nested-ternary": "error", // Handled by unicorn/no-nested-ternary
             "no-new-func": "error",
             "no-new-wrappers": "error",
             "no-object-constructor": "error",
@@ -240,6 +244,11 @@ export default [
                 },
             ],
             "jsdoc/valid-types": "error",
+
+            // Unicorn Rules
+            "unicorn/custom-error-definition": "warn",
+            "unicorn/no-unused-properties": "warn",
+            "unicorn/require-post-message-target-origin": "warn",
         },
 
         settings: {
