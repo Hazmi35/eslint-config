@@ -5,16 +5,16 @@ export default [
     js.configs.recommended,
     {
         languageOptions: {
-            ecmaVersion: "latest"
+            ecmaVersion: "latest",
+            parserOptions: {
+                ecmaFeatures: {
+                    globalReturn: false,
+                    impliedStrict: true,
+                }
+            }
         },
         linterOptions: {
             reportUnusedDisableDirectives: "warn"
-        },
-        parserOptions: {
-            ecmaFeatures: {
-                globalReturn: false,
-                impliedStrict: true,
-            }
         },
         rules: {
             // Possible Errors
