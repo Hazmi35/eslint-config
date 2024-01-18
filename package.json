@@ -16,7 +16,13 @@
   "license": "MIT",
   "author": "Hazmi35 <contact@hzmi.xyz>",
   "type": "module",
-  "main": "src/common.js",
+  "exports": {
+    ".": "./common.js",
+    "./common": "./common.js",
+    "./modules": "./modules.js",
+    "./edge": "./edge.js",
+    "./node": "./node.js"
+  },
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
