@@ -30,6 +30,10 @@ export default [
             "no-unmodified-loop-condition": "error",
             "no-unreachable-loop": "error",
             "no-unused-private-class-members": "warn",
+            "no-unused-vars": ["error", {
+                caughtErrors: "all",
+                destructuredArrayIgnorePattern: "^_"
+            }],
             "no-use-before-define": [
                 "error",
                 {
