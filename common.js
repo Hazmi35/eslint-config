@@ -16,13 +16,16 @@ export default [
         linterOptions: {
             reportUnusedDisableDirectives: "warn"
         },
+        plugins: {
+            import: await import("eslint-plugin-import")
+        },
         rules: {
             // Possible Errors
             "array-callback-return": "error",
             "no-await-in-loop": "warn",
             "no-constant-binary-expression": "error",
             "no-constructor-return": "error",
-            "no-duplicate-imports": "error",
+            "no-duplicate-imports": "off", // Handled by import/no-duplicates
             "no-new-native-nonconstructor": "error",
             "no-promise-executor-return": "error",
             "no-self-compare": "error",
@@ -158,7 +161,53 @@ export default [
             yoda: ["error", "never"],
 
             // Layout and Formatting
-            "unicode-bom": ["error", "never"]
+            "unicode-bom": ["error", "never"],
+
+            // Import Rules
+            "import/consistent-type-specifier-style": ["warn", "prefer-top-level"],
+            "import/default": "warn", // TODO: Check if this will cause issues
+            "import/export": "warn",
+            "import/first": "error",
+            "import/named": "warn", // TODO: Check if this will cause issues
+            "import/newline-after-import": "error",
+            "import/no-absolute-path": "error",
+            "import/no-amd": "error",
+            "import/no-duplicates": "error",
+            "import/no-dynamic-require": "error",
+            "import/no-empty-named-blocks": "error",
+            "import/no-extraneous-dependencies": [
+                "error",
+                {
+                    devDependencies: true,
+                    optionalDependencies: true,
+                    peerDependencies: true,
+                },
+            ],
+            "import/no-mutable-exports": "error",
+            "import/no-self-import": "error",
+            "import/no-useless-path-segments": "error",
+            "import/no-webpack-loader-syntax": "error",
+            "import/order": [
+                "error",
+                {
+                    alphabetize: {
+                        caseInsensitive: false,
+                        order: "asc",
+                    },
+                    groups: ["builtin", "external", "internal", "parent", "sibling", "index"],
+                    "newlines-between": "never",
+                }
+            ],
+            
+        },
+
+        settings: {
+            "import/extensions": [".js"],
+            "import/resolver": {
+                node: {
+                    extensions: [".js"],
+                },
+            }
         }
     }
 ]
