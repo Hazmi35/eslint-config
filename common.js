@@ -1,4 +1,6 @@
 import js from "@eslint/js";
+import importPlugin from "eslint-plugin-import";
+import jsdoc from "eslint-plugin-jsdoc";
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
@@ -17,8 +19,8 @@ export default [
             reportUnusedDisableDirectives: "warn"
         },
         plugins: {
-            import: await import("eslint-plugin-import"),
-            jsdoc: await import("eslint-plugin-jsdoc"),
+            import: importPlugin,
+            jsdoc,
         },
         rules: {
             // Possible Errors
