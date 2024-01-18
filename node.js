@@ -56,7 +56,7 @@ export default [
             "unicorn/require-post-message-target-origin": "off",
 
             // eslint-plugin-node
-            "n/callback-return": "error",
+            "n/callback-return": ["error", ["callback", "cb"]],
             "n/handle-callback-err": "error",
             "n/no-callback-literal": "error",
             "n/no-deprecated-api": "error",
