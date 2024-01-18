@@ -1,8 +1,8 @@
 import js from "@eslint/js";
 import importPlugin from "eslint-plugin-import";
 import jsdoc from "eslint-plugin-jsdoc";
-import unicorn from "eslint-plugin-unicorn";
 import promise from "eslint-plugin-promise";
+import unicorn from "eslint-plugin-unicorn";
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
@@ -251,6 +251,7 @@ export default [
             "unicorn/no-negated-condition": "error",
             "unicorn/no-nested-ternary": "error",
             "unicorn/require-post-message-target-origin": "warn",
+            "unicorn/prefer-module": "off", // Add @hazmi35/eslint-config/modules config
 
             // Promise Rules
             "promise/always-return": "error",
