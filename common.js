@@ -252,6 +252,7 @@ export default [
             "unicorn/no-nested-ternary": "error",
             "unicorn/require-post-message-target-origin": "warn",
             "unicorn/prefer-module": "off", // Add @hazmi35/eslint-config/modules config
+            "unicorn/prefer-node-protocol": "off", // Add @hazmi35/eslint-config/node config
 
             // Promise Rules
             "promise/always-return": "error",
