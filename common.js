@@ -172,7 +172,6 @@ export default [
 
             // Import Rules
             "import/consistent-type-specifier-style": ["warn", "prefer-top-level"],
-            "import/default": "warn", // TODO: Check if this will cause issues
             "import/export": "warn",
             "import/first": "error",
             "import/named": "warn", // TODO: Check if this will cause issues
