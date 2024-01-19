@@ -12,7 +12,7 @@ export default [
             }
         },
         plugins: {
-            n: node
+            node
         },
         rules: {
             "no-restricted-globals": [

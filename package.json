@@ -17,11 +17,11 @@
   "author": "Hazmi35 <contact@hzmi.xyz>",
   "type": "module",
   "exports": {
-    ".": "./common.js",
-    "./common": "./common.js",
-    "./modules": "./modules.js",
-    "./edge": "./edge.js",
-    "./node": "./node.js"
+    ".": "./conf/common.js",
+    "./common": "./conf/common.js",
+    "./modules": "./conf/modules.js",
+    "./edge": "./conf/edge.js",
+    "./node": "./conf/node.js"
   },
   "scripts": {
     "lint": "eslint .",

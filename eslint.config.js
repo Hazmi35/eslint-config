@@ -1,3 +1,3 @@
-import common from './common.js';
+import common from './conf/common.js';
 
 export default [...common];

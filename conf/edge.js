@@ -8,7 +8,6 @@ export default [
             }
         },
         rules: {
-            // "import/extensions": "off", // TODO: Check if this needed
             "no-restricted-globals": "off",
             "n/prefer-global/buffer": ["error", "always"],
             "n/prefer-global/console": ["error", "always"],
