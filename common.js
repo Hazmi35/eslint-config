@@ -178,7 +178,6 @@ export default [
             "import/consistent-type-specifier-style": ["warn", "prefer-top-level"],
             "import/export": "warn",
             "import/first": "error",
-            "import/named": "warn", // TODO: Check if this will cause issues
             "import/newline-after-import": "error",
             "import/no-absolute-path": "error",
             "import/no-amd": "error",
