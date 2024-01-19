@@ -250,10 +250,13 @@ export default [
 
             // Unicorn Rules (Most of them enabled from recommended rules)
             ...unicorn.configs["flat/recommended"].rules,
+            "unicorn/catch-error-name": ["warn", { name: "error" }],
             "unicorn/custom-error-definition": "warn",
             "unicorn/no-unused-properties": "warn",
             "unicorn/no-negated-condition": "error",
             "unicorn/no-nested-ternary": "error",
+            "unicorn/no-null": "off",
+            "unicorn/no-useless-undefined": "warn",
             "unicorn/require-post-message-target-origin": "warn",
             "unicorn/prefer-module": "off", // Add @hazmi35/eslint-config/modules config
             "unicorn/prefer-node-protocol": "off", // Add @hazmi35/eslint-config/node config
@@ -263,6 +266,7 @@ export default [
                     pascalCase: true
                 }
             }],
+            "unicorn/prevent-abbreviations": "warn",
 
             // Promise Rules
             "promise/always-return": "error",
