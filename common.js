@@ -147,7 +147,7 @@ export default [
             ],
             "no-useless-return": "warn",
             "no-var": "error",
-            "no-warning-comments": ["warn", { location: "start" }], // The term TODO is handled by unicorn/expiring-todo-comments
+            "no-warning-comments": "off", // The term TODO is handled by unicorn/expiring-todo-comments
             "object-shorthand": "warn",
             "one-var": ["warn", "never"],
             "operator-assignment": ["warn", "always"],
