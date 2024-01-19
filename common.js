@@ -36,7 +36,7 @@ export default [
             "no-await-in-loop": "warn",
             "no-constant-binary-expression": "error",
             "no-constructor-return": "error",
-            "no-duplicate-imports": "off", // Handled by import/no-duplicates
+            "no-duplicate-imports": "off", // Replaced by import/no-duplicates
             "no-new-native-nonconstructor": "error",
             "no-promise-executor-return": "error",
             "no-self-compare": "error",
@@ -111,8 +111,8 @@ export default [
             "no-loop-func": "error",
             "no-multi-assign": ["warn", { ignoreNonDeclaration: true }],
             "no-multi-str": "warn",
-            "no-negated-condition": "off", // Handled by unicorn/no-negated-condition
-            "no-nested-ternary": "off",  // Handled by unicorn/no-nested-ternary
+            "no-negated-condition": "off", // Replaced by unicorn/no-negated-condition
+            "no-nested-ternary": "off",  // Replaced by unicorn/no-nested-ternary
             "no-new-func": "error",
             "no-new-wrappers": "error",
             "no-object-constructor": "error",
@@ -248,25 +248,124 @@ export default [
             ],
             "jsdoc/valid-types": "error",
 
-            // Unicorn Rules (Most of them enabled from recommended rules)
-            ...unicorn.configs["flat/recommended"].rules,
+            // Unicorn Rules
+            "unicorn/better-regex": "warn",
             "unicorn/catch-error-name": ["warn", { name: "error" }],
-            "unicorn/custom-error-definition": "warn",
-            "unicorn/no-unused-properties": "warn",
-            "unicorn/no-negated-condition": "error",
-            "unicorn/no-nested-ternary": "error",
-            "unicorn/no-null": "off",
-            "unicorn/no-useless-undefined": "warn",
-            "unicorn/require-post-message-target-origin": "warn",
-            "unicorn/prefer-module": "off", // Add @hazmi35/eslint-config/modules config
-            "unicorn/prefer-node-protocol": "off", // Add @hazmi35/eslint-config/node config
+            "unicorn/consistent-destructuring": "warn",
+            "unicorn/consistent-function-scoping": "error",
+            "unicorn/custom-error-definition": "error",
+            "unicorn/empty-brace-spaces": "warn",
+            "unicorn/error-message": "error",
+            "unicorn/escape-case": "warn",
+            "unicorn/expiring-todo-comments": "error",
+            "unicorn/explicit-length-check": "warn",
             "unicorn/filename-case": ["warn", {
                 cases: {
                     camelCase: true,
                     pascalCase: true
                 }
             }],
-            "unicorn/prevent-abbreviations": "warn",
+            "unicorn/import-style": "warn", // TODO: Check if this will cause issues
+            "unicorn/new-for-builtins": "error",
+            "unicorn/no-abusive-eslint-disable": "error",
+            "unicorn/no-array-callback-reference": "error",
+            "unicorn/no-array-for-each": "warn",
+            "unicorn/no-array-method-this-argument": "error",
+            "unicorn/no-array-push-push": "warn",
+            "unicorn/no-await-expression-member": "warn",
+            "unicorn/no-console-spaces": "warn",
+            "unicorn/no-document-cookie": "error",
+            "unicorn/no-empty-file": "error",
+            "unicorn/no-for-loop": "warn",
+            "unicorn/no-hex-escape": "error",
+            "unicorn/no-instanceof-array": "error",
+            "unicorn/no-invalid-remove-event-listener": "error",
+            "unicorn/no-lonely-if": "error", // Used together with no-lonely-if from eslint rules as it's recommended
+            "unicorn/no-negated-condition": "error", // Replaces no-negated-condition from eslint rules
+            "unicorn/no-nested-ternary": "error", // Replaces no-nested-ternary from eslint rules
+            "unicorn/no-new-array": "error",
+            "unicorn/no-new-buffer": "error",
+            "unicorn/no-object-as-default-parameter": "error",
+            "unicorn/no-static-only-class": "warn",
+            "unicorn/no-thenable": "error",
+            "unicorn/no-this-assignment": "error",
+            "unicorn/no-typeof-undefined": "error",
+            "unicorn/no-unnecessary-await": "error",
+            "unicorn/no-unnecessary-polyfills": "error",
+            "unicorn/no-unreadable-array-destructuring": "error",
+            "unicorn/no-unreadable-iife": "error",
+            "unicorn/no-unsafe-regex": "error",
+            "unicorn/no-unused-properties": "warn",
+            "unicorn/no-useless-fallback-in-spread": "error",
+            "unicorn/no-useless-length-check": "error",
+            "unicorn/no-useless-promise-resolve-reject": "error",
+            "unicorn/no-useless-spread": "error",
+            "unicorn/no-useless-switch-case": "error",
+            "unicorn/no-useless-undefined": "warn",
+            "unicorn/no-zero-fractions": "error",
+            "unicorn/number-literal-case": "error",
+            "unicorn/numeric-separators-style": [
+                "error",
+                {
+                    hexadecimal: {
+                        onlyIfContainsSeparator: true,
+                    },
+                    binary: {
+                        onlyIfContainsSeparator: true,
+                    },
+                    octal: {
+                        onlyIfContainsSeparator: true,
+                    },
+                    number: {
+                        groupLength: 3,
+                        minimumDigits: 0,
+                    },
+                },
+            ],
+            "unicorn/prefer-array-find": "error",
+            "unicorn/prefer-array-flat": "error",
+            "unicorn/prefer-array-flat-map": "error",
+            "unicorn/prefer-array-index-of": "error",
+            "unicorn/prefer-array-some": "error",
+            "unicorn/prefer-at": "warn",
+            "unicorn/prefer-blob-reading-methods": "warn",
+            "unicorn/prefer-code-point": "error",
+            "unicorn/prefer-date-now": "error",
+            "unicorn/prefer-default-parameters": "warn",
+            "unicorn/prefer-export-from": "error",
+            "unicorn/prefer-includes": "error",
+            "unicorn/prefer-keyboard-event-key": "error",
+            "unicorn/prefer-logical-operator-over-ternary": "error",
+            "unicorn/prefer-math-trunc": "error",
+            "unicorn/prefer-modern-math-apis": "warn",
+            "unicorn/prefer-module": "off", // Add @hazmi35/eslint-config/modules config
+            "unicorn/prefer-native-coercion-functions": "error",
+            "unicorn/prefer-negative-index": "warn",
+            "unicorn/prefer-node-protocol": "off", // Add @hazmi35/eslint-config/node config
+            "unicorn/prefer-number-properties": "error",
+            "unicorn/prefer-object-from-entries": "error",
+            "unicorn/prefer-optional-catch-binding": "warn",
+            "unicorn/prefer-query-selector": "error",
+            "unicorn/prefer-reflect-apply": "error",
+            "unicorn/prefer-regexp-test": "error",
+            "unicorn/prefer-set-has": "warn",
+            "unicorn/prefer-set-size": "warn",
+            "unicorn/prefer-spread": "error",
+            "unicorn/prefer-string-replace-all": "error",
+            "unicorn/prefer-string-slice": "error",
+            "unicorn/prefer-string-starts-ends-with": "error",
+            "unicorn/prefer-string-trim-start-end": "error",
+            "unicorn/prefer-switch": "warn",
+            "unicorn/prefer-ternary": "warn",
+            "unicorn/prefer-top-level-await": "off", // Add @hazmi35/eslint-config/modules config
+            "unicorn/prefer-type-error": "error",
+            "unicorn/relative-url-style": ["error", "never"],
+            "unicorn/require-array-join-separator": "error",
+            "unicorn/require-number-to-fixed-digits-argument": "warn",
+            "unicorn/require-post-message-target-origin": "warn",
+            "unicorn/template-indent": "error",
+            "unicorn/text-encoding-identifier-case": "warn",
+            "unicorn/throw-new-error": "error",
 
             // Promise Rules
             "promise/always-return": "error",

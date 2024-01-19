@@ -86,7 +86,7 @@ export default [
                     convertPath: {
                         "src/**/*.js": ["^src/(.+?)\\.js$", "dist/$1.js"],
                     },
-                },
+                }
             ]
         }
     }
