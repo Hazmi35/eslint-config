@@ -1,6 +1,7 @@
 import node from "eslint-plugin-n";
 import globals from "globals";
 
+/** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
         languageOptions: {
