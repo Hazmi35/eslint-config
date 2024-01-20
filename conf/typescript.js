@@ -6,7 +6,7 @@ import { FlatCompat } from "@eslint/eslintrc";
 const directoryName = import.meta.dirname ?? dirname(fileURLToPath(import.meta.url));
 const compat = new FlatCompat({ resolvePluginsRelativeTo: directoryName });
 
-// TODO: Use entirely flat config. REF: https://github.com/typescript-eslint/typescript-eslint/issues/7694#issuecomment-1854655034
+// TODO [2024-02-01]: Use entirely flat config. REF: https://github.com/typescript-eslint/typescript-eslint/issues/7694#issuecomment-1854655034
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
@@ -62,12 +62,12 @@ export default [
                     trailingUnderscore: "forbid"
                 },
                 {
-                    selector: "variable", // TODO: Test that this works with destructuring, and if not the the default selector should be used instead.
+                    selector: "variable", // TODO [2024-01-31]: Test that this works with destructuring, and if not the the default selector should be used instead.
                     format: null,
                     modifiers: ["destructured"]
                 },
                 {
-                    selector: "default", // TODO: Test that this works. If not, then the default selector should be used instead.
+                    selector: "default", // TODO [2024-01-31]: Test that this works. If not, then the default selector should be used instead.
                     format: null,
                     modifiers: ["requiresQuotes"]
                 }

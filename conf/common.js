@@ -256,7 +256,7 @@ export default [
             "unicorn/empty-brace-spaces": "warn",
             "unicorn/error-message": "error",
             "unicorn/escape-case": "warn",
-            "unicorn/expiring-todo-comments": "error",
+            "unicorn/expiring-todo-comments": ["error", { allowWarningComments: false }],
             "unicorn/explicit-length-check": "warn",
             "unicorn/filename-case": ["warn", {
                 cases: {
@@ -264,7 +264,7 @@ export default [
                     pascalCase: true
                 }
             }],
-            "unicorn/import-style": "warn", // TODO: Check if this will cause issues
+            "unicorn/import-style": "warn", // TODO [2024-01-31]: Check if this will cause issues
             "unicorn/new-for-builtins": "error",
             "unicorn/no-abusive-eslint-disable": "error",
             "unicorn/no-array-callback-reference": "error",
