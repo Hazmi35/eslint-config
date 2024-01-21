@@ -19,6 +19,7 @@ export default [
         languageOptions: {
             parserOptions: {
                 ecmaVersion: common.languageOptions.parserOptions.ecmaVersion,
+                project: true,
 
                 // TODO [@typescript-eslint/parser@>=7]: Remove this. (It's the default from 7 onwards)
                 allowAutomaticSingleRunInference: true
