@@ -113,7 +113,7 @@ export default [
             "default-case": "warn",
             "default-case-last": "warn",
             "default-param-last": "warn",
-            "dot-notation": "error", // TODO [2024-01-31]: Move to stylistic rules
+            "dot-notation": "error",
             eqeqeq: ["error", "smart"],
             "func-name-matching": ["warn", "always"],
             "func-names": ["warn", "as-needed"],

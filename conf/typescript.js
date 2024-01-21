@@ -26,8 +26,22 @@ export default [
 
         rules: {
             // typescript-eslint rules
+            "@typescript-eslint/adjacent-overload-signatures": "error",
+            "@typescript-eslint/array-type": "error",
             "@typescript-eslint/await-thenable": "error",
             "@typescript-eslint/ban-ts-comment": ["error", { minimumDescriptionLength: 5 }],
+            "@typescript-eslint/ban-tslint-comment": "error",
+            "@typescript-eslint/class-literal-property-style": ["error", "fields"],
+            "@typescript-eslint/consistent-generic-constructors": "warn",
+            "consistent-indexed-object-style": ["error", "record"],
+            "@typescript-eslint/consistent-type-assertions": [
+                "error",
+                {
+                    assertionStyle: "as",
+                    objectLiteralTypeAssertions: "allow",
+                },
+            ],
+            "@typescript-eslint/consistent-type-definitions": ["error", "type"],
             "@typescript-eslint/consistent-type-exports": [
                 "warn",
                 {
@@ -42,6 +56,8 @@ export default [
             ],
             "default-param-last": "off",
             "@typescript-eslint/default-param-last": "warn",
+            "dot-notation": "off",
+            "@typescript-eslint/dot-notation": "error",
             "@typescript-eslint/explicit-function-return-type": [
                 "error",
                 {
@@ -85,6 +101,7 @@ export default [
             "@typescript-eslint/no-array-constructor": "warn",
             "@typescript-eslint/no-array-delete": "error",
             "@typescript-eslint/no-base-to-string": "error",
+            "@typescript-eslint/no-confusing-non-null-assertion": "error",
             "@typescript-eslint/no-confusing-void-expression": [
                 "error",
                 {
@@ -110,6 +127,13 @@ export default [
                 },
             ],
             "@typescript-eslint/no-for-in-array": "error",
+            "@typescript-eslint/no-inferrable-types": [
+                "error",
+                {
+                    ignoreParameters: true,
+                    ignoreProperties: true,
+                },
+            ],
             "no-implied-eval": "off",
             "@typescript-eslint/no-implied-eval": "error",
             "@typescript-eslint/no-import-type-side-effects": "warn",
@@ -209,10 +233,16 @@ export default [
             "@typescript-eslint/no-useless-empty-export": "warn",
             "@typescript-eslint/no-useless-template-literal": "warn",
             "@typescript-eslint/no-var-requires": "error",
+            "@typescript-eslint/non-nullable-type-assertion-style": "warn",
             "@typescript-eslint/prefer-as-const": "warn",
             "@typescript-eslint/prefer-enum-initializers": "warn",
+            "@typescript-eslint/prefer-for-of": "warn",
+            "@typescript-eslint/prefer-function-type": "warn",
             "@typescript-eslint/prefer-includes": "error",
             "@typescript-eslint/prefer-literal-enum-member": "warn",
+            "@typescript-eslint/prefer-namespace-keyword": "warn",
+            "@typescript-eslint/prefer-nullish-coalescing": "error",
+            "@typescript-eslint/prefer-optional-chain": "error",
             "prefer-promise-reject-errors": "off",
             "@typescript-eslint/prefer-promise-reject-errors": "error",
             "@typescript-eslint/prefer-readonly": ["error", { "onlyInlineLambdas": true }],
@@ -220,6 +250,7 @@ export default [
             "@typescript-eslint/prefer-reduce-type-parameter": "warn",
             "@typescript-eslint/prefer-regexp-exec": "error", // TODO [2024-01-31]: Test that this doesn't conflict with unicorn/prefer-regexp-test
             "@typescript-eslint/prefer-return-this-type": "warn",
+            "@typescript-eslint/prefer-string-starts-ends-with": "error", // TODO [2024-01-31]: Test that this doesn't conflict with unicorn/prefer-string-starts-ends-with
             "@typescript-eslint/prefer-ts-expect-error": "error",
             "@typescript-eslint/promise-function-async": "error",
             "@typescript-eslint/require-array-sort-compare": [
