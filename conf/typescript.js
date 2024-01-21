@@ -11,6 +11,8 @@ const compat = new FlatCompat({ resolvePluginsRelativeTo: directoryName });
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
+        files: ["**/*.ts", "**/*.cts", "**/*.mts"],
+
         ...compat.config({
             plugins: ["@typescript-eslint", "tsdoc"],
             parser: "@typescript-eslint/parser",
