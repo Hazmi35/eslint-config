@@ -1,20 +1,8 @@
 {
+	"extends": "@tsconfig/node-lts/tsconfig.json",
 	"compilerOptions": {
-		"target": "ES2022",
-		"module": "commonjs",
-		"moduleResolution": "node",
-		"lib": ["ES2022"],
-		"strict": true,
 		"outDir": "dist",
-		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true,
-		"experimentalDecorators": true,
-		"emitDecoratorMetadata": true,
 		"skipLibCheck": false,
-		"noEmitHelpers": true,
-		"importHelpers": true,
-		"resolveJsonModule": true,
-		"typeRoots": ["node_modules/@types", "src/typings"],
 		"allowJs": true
 	}
 }
