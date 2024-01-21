@@ -49,7 +49,6 @@ export default [...common, ...modules, ...node, ...stylistic];
 ```js
 import { common, modules, node, stylistic, typescript } from "@hazmi35/eslint-config";
 
-// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 export default [...common, ...modules, ...node, ...stylistic, ...typescript];
 ```
 </details>
