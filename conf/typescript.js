@@ -12,7 +12,7 @@ const compat = new FlatCompat({ resolvePluginsRelativeTo: directoryName });
 export default [
     {
         ...compat.config({
-            plugins: ["@typescript-eslint"],
+            plugins: ["@typescript-eslint", "tsdoc"],
             parser: "@typescript-eslint/parser",
         })[0],
 
@@ -251,7 +251,12 @@ export default [
                     ignoreStatic: true,
                 },
             ],
-            "@typescript-eslint/unified-signatures": "warn"
+            "@typescript-eslint/unified-signatures": "warn",
+
+            // tsdoc and jsdoc rules
+            "jsdoc/check-tag-names": "off",
+            "jsdoc/require-property-type": "off",
+            "tsdoc/syntax": "warn"
         },
 
         settings: {
