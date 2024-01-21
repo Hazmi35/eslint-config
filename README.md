@@ -21,8 +21,8 @@ This package requires ESLint Flat Configuration.
 Available configurations:
 - [common](./conf/common.js) - Common JavaScript rules.
 - [typescript](./conf/typescript.js) - For usage with [TypeScript](https://www.typescriptlang.org)
-- [stylistic](./conf/stylistic.js) - For code styling with [Stylistic ESLint](https://eslint.style). (Exclusive with Prettier)
-- [prettier](./conf/prettier.js) - For code styling with [Prettier](https://prettier.io). (Exclusive with Stylistic ESLint)
+- [stylistic](./conf/stylistic.js) - For code styling with [ESLint Stylistic](https://eslint.style). (Exclusive with Prettier)
+- [prettier](./conf/prettier.js) - For code styling with [Prettier](https://prettier.io). (Exclusive with ESLint Stylistic)
 - [browser](./conf/browser.js) - For usage within a browser environment (DOM and Web APIs).
 - [node](./conf/node.js) - For usage within a [Node.js](https://nodejs.org) environment.
 - [edge](./conf/edge.js) - For usage within an edge/serverless environment. For example [Cloudflare Workers](https://workers.cloudflare.com/).
