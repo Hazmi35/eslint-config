@@ -16,7 +16,7 @@ yarn add -D @hazmi35/eslint-config # yarn
 This package has the required dependency installed automatically by peer dependencies by default on npm v7+, pnpm, or yarn. Install them manually if not.
 
 ## Usage
-This package from v13 onwards, requires ESLint Flat Configuration.
+This package requires ESLint Flat Configuration.
 
 Available configurations:
 - [common](./conf/common.js) - Common JavaScript rules.
