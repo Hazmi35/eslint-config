@@ -325,7 +325,7 @@ export default [
                     pascalCase: true
                 }
             }],
-            "unicorn/import-style": "warn", // TODO [2024-01-31]: Check if this will cause issues
+            "unicorn/import-style": "warn",
             "unicorn/new-for-builtins": "error",
             "unicorn/no-abusive-eslint-disable": "error",
             "unicorn/no-array-callback-reference": "error",
