@@ -17,15 +17,7 @@
   "author": "Hazmi35 <contact@hzmi.xyz>",
   "type": "module",
   "exports": {
-    ".": "./index.js",
-    "./browser": "./conf/browser.js",
-    "./common": "./conf/common.js",
-    "./edge": "./conf/edge.js",
-    "./modules": "./conf/modules.js",
-    "./node": "./conf/node.js",
-    "./prettier": "./conf/prettier.js",
-    "./stylistic": "./conf/stylistic.js",
-    "./typescript": "./conf/typescript.js"
+    ".": "./index.js"
   },
   "scripts": {
     "lint": "eslint .",
@@ -41,6 +33,7 @@
     "@typescript-eslint/parser": ">=6.19.0",
     "eslint": ">=8.56.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsdoc": "^48.0.2",
     "eslint-plugin-n": "^16.6.2",
@@ -57,6 +50,7 @@
     "@typescript-eslint/parser": ">=6.19.0",
     "eslint": ">=8.56.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsdoc": "^48.0.2",
     "eslint-plugin-n": "^16.6.2",
