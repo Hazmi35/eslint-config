@@ -35,7 +35,7 @@ export default [
             "@typescript-eslint/ban-tslint-comment": "error",
             "@typescript-eslint/class-literal-property-style": ["error", "fields"],
             "@typescript-eslint/consistent-generic-constructors": "warn",
-            "consistent-indexed-object-style": ["error", "record"],
+            "@typescript-eslint/consistent-indexed-object-style": ["error", "record"],
             "@typescript-eslint/consistent-type-assertions": [
                 "error",
                 {
