@@ -235,7 +235,7 @@ export default [
             ],
             "@typescript-eslint/return-await": ["error", "in-try-catch"],
             "@typescript-eslint/sort-type-constituents": "error",
-            "@typescript-eslint/strict-boolean-expressions": "off", // TODO [2024-01-31]: Enable this
+            "@typescript-eslint/strict-boolean-expressions": "error",
             "@typescript-eslint/switch-exhaustiveness-check": "error",
             "@typescript-eslint/triple-slash-reference": [
                 "error",
