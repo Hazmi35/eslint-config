@@ -97,6 +97,9 @@ export default [
             "@typescript-eslint/no-duplicate-enum-values": "warn",
             "@typescript-eslint/no-duplicate-type-constituents": "error",
             "@typescript-eslint/no-dynamic-delete": "error",
+            "no-empty-function": "off",
+            "@typescript-eslint/no-empty-function": "warn",
+            "@typescript-eslint/no-empty-interface": "warn",
             "@typescript-eslint/no-extra-non-null-assertion": "error",
             "@typescript-eslint/no-extraneous-class": "warn",
             "@typescript-eslint/no-floating-promises": [
@@ -123,8 +126,6 @@ export default [
             "@typescript-eslint/no-loop-func": "error",
             "no-loss-of-precision": "off",
             "@typescript-eslint/no-loss-of-precision": "error",
-            "no-magic-numbers": "off",
-            "@typescript-eslint/no-magic-numbers": "error",
             "@typescript-eslint/no-meaningless-void-operator": [
                 "error",
                 {
@@ -166,6 +167,7 @@ export default [
                     allowDestructuring: true,
                 },
             ],
+            "no-throw-literal": "off",
             "@typescript-eslint/no-throw-literal": "error",
             "@typescript-eslint/no-unnecessary-boolean-literal-compare": "warn",
             "@typescript-eslint/no-unnecessary-condition": [
@@ -189,7 +191,10 @@ export default [
             "no-unused-expressions": "off",
             "@typescript-eslint/no-unused-expressions": "warn",
             "no-unused-vars": "off",
-            "@typescript-eslint/no-unused-vars": "error",
+            "@typescript-eslint/no-unused-vars": ["error", {
+                caughtErrors: "all",
+                destructuredArrayIgnorePattern: "^_"
+            }],
             "no-use-before-define": "off",
             "@typescript-eslint/no-use-before-define": [
                 "error",
@@ -208,7 +213,7 @@ export default [
             "@typescript-eslint/prefer-enum-initializers": "warn",
             "@typescript-eslint/prefer-includes": "error",
             "@typescript-eslint/prefer-literal-enum-member": "warn",
-            "prefeer-promise-reject-errors": "off",
+            "prefer-promise-reject-errors": "off",
             "@typescript-eslint/prefer-promise-reject-errors": "error",
             "@typescript-eslint/prefer-readonly": ["error", { "onlyInlineLambdas": true }],
             "@typescript-eslint/prefer-readonly-parameter-types": "warn",
