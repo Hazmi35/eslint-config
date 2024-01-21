@@ -25,7 +25,7 @@ Available configurations:
 - [prettier](./conf/prettier.js) - For usage with [Prettier](https://prettier.io).
 - [browser](./conf/browser.js) - For usage within a browser environment (DOM and Web APIs).
 - [node](./conf/node.js) - For usage within a [Node.js](https://nodejs.org) environment.
-- [edge](./conf/edge.js) - For usage within an edge/serverless environment. For example [Cloudflare Workers](https://workers.cloudflare.com/) or others.
+- [edge](./conf/edge.js) - For usage within an edge/serverless environment. For example [Cloudflare Workers](https://workers.cloudflare.com/).
 - [modules](./conf/modules.js) - For usage with [ES Modules](https://nodejs.org/api/esm.html).
 
 ### Configuration
