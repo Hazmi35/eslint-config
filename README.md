@@ -43,6 +43,19 @@ export default [...common, ...modules, ...node, ...stylistic];
 </details>
 
 <details>
+<summary>Node.js with CJS</summary>
+<br>
+
+```js
+module.exports = (async () => {
+    const { common, node, stylistic } = await import("@hazmi35/eslint-config");
+
+    return [...common, ...node, ...stylistic];
+})();
+```
+</details>
+
+<details>
 <summary>Node.js with TypeScript</summary>
 <br>
 
