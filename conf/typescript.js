@@ -7,7 +7,7 @@ import common from "./common.js";
 const directoryName = import.meta.dirname ?? dirname(fileURLToPath(import.meta.url));
 const compat = new FlatCompat({ resolvePluginsRelativeTo: directoryName });
 
-// TODO [2024-02-01]: Use entirely flat config. REF: https://github.com/typescript-eslint/typescript-eslint/issues/7694#issuecomment-1854655034
+// TODO [@typescript-eslint/parser@>=7]: Use entirely flat config. REF: https://github.com/typescript-eslint/typescript-eslint/issues/7694#issuecomment-1854655034
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
