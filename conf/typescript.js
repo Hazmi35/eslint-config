@@ -1,6 +1,7 @@
 import { dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { FlatCompat } from "@eslint/eslintrc";
+import common from "./common.js";
 
 // TODO [2025-04-30]: Remove dirname workaround. Bump Node.js requirement to >=20.11.0
 const directoryName = import.meta.dirname ?? dirname(fileURLToPath(import.meta.url));
@@ -14,6 +15,14 @@ export default [
             plugins: ["@typescript-eslint"],
             parser: "@typescript-eslint/parser",
         })[0],
+
+        languageOptions: {
+            parserOptions: {
+                ecmaVersion: common.languageOptions.parserOptions.ecmaVersion,
+                // TODO [@typescript-eslint/parser@>=7]: Remove this. (It's the default from 7 onwards)
+                allowAutomaticSingleRunInference: true,
+            }
+        },
 
         rules: {
             // typescript-eslint rules
