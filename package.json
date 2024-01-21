@@ -18,10 +18,14 @@
   "type": "module",
   "exports": {
     ".": "./conf/common.js",
+    "./browser": "./conf/browser.js",
     "./common": "./conf/common.js",
-    "./modules": "./conf/modules.js",
     "./edge": "./conf/edge.js",
-    "./node": "./conf/node.js"
+    "./modules": "./conf/modules.js",
+    "./node": "./conf/node.js",
+    "./prettier": "./conf/prettier.js",
+    "./stylistic": "./conf/stylistic.js",
+    "./typescript": "./conf/typescript.js"
   },
   "scripts": {
     "lint": "eslint .",
