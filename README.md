@@ -57,16 +57,6 @@ import stylistic from "@hazmi35/eslint-config/stylistic";
 import typescript from "@hazmi35/eslint-config/typescript";
 
 export default [...common, ...modules, ...node, ...stylistic, ...typescript];
-// or with specific tsconfig.json path for @typescript-eslint/parser
-export default [
-    ...common,
-    ...modules,
-    ...node,
-    ...stylistic,
-    ...typescript,
-    { languageOptions: { parserOptions: { project: "./tsconfig.eslint.json" } } }
-];
-```
 </details>
 
 <details>
