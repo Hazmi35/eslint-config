@@ -54,7 +54,7 @@ export default [...common, ...modules, ...node, ...stylistic, ...typescript];
 </details>
 
 <details>
-<summary>Usage with prettier</summary>
+<summary>Usage with Prettier</summary>
 <br>
 
 ```js
@@ -62,6 +62,21 @@ import { common, modules, node, prettier } from "@hazmi35/eslint-config";
 
 // Prettier must not be used with stylistic config, because it will conflict with each other.
 export default [...common, ...modules, ...node, ...prettier];
+```
+</details>
+
+<details>
+<summary>Extending rules</summary>
+<br>
+
+```js
+import { common, modules, node, stylistic, typescript } from "@hazmi35/eslint-config";
+
+export default [...common, ...modules, ...node, ...stylistic, ...typescript, {
+    rules: {
+        "@typescript-eslint/no-unnecessary-condition": "off"
+    }
+}];
 ```
 </details>
 
