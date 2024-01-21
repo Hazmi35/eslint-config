@@ -36,10 +36,10 @@ Create a `eslint.config.js` file in the root of your project and add the followi
 <br>
 
 ```js
-import common from "./conf/common.js";
-import modules from "./conf/modules.js";
-import node from "./conf/node.js";
-import stylistic from "./conf/stylistic.js";
+import common from "@hazmi35/eslint-config/common";
+import modules from "@hazmi35/eslint-config/modules";
+import node from "@hazmi35/eslint-config/node";
+import stylistic from "@hazmi35/eslint-config/stylistic";
 
 export default [...common, ...modules, ...node, ...stylistic];
 ``````
@@ -50,11 +50,11 @@ export default [...common, ...modules, ...node, ...stylistic];
 <br>
 
 ```js
-import common from "./conf/common.js";
-import modules from "./conf/modules.js";
-import node from "./conf/node.js";
-import stylistic from "./conf/stylistic.js";
-import typescript from "./conf/typescript.js";
+import common from "@hazmi35/eslint-config/common";
+import modules from "@hazmi35/eslint-config/modules";
+import node from "@hazmi35/eslint-config/node";
+import stylistic from "@hazmi35/eslint-config/stylistic";
+import typescript from "@hazmi35/eslint-config/typescript";
 
 export default [...common, ...modules, ...node, ...stylistic, ...typescript];
 // or with specific tsconfig.json path for @typescript-eslint/parser
@@ -73,10 +73,10 @@ export default [
 <br>
 
 ```js
-import common from "./conf/common.js";
-import modules from "./conf/modules.js";
-import node from "./conf/node.js";
-import prettier from "./conf/prettier.js";
+import common from "@hazmi35/eslint-config/common";
+import modules from "@hazmi35/eslint-config/modules";
+import node from "@hazmi35/eslint-config/node";
+import prettier from "@hazmi35/eslint-config/prettier";
 
 // Prettier must not be used with stylistic config, because it will conflict with each other.
 export default [...common, ...modules, ...node, ...prettier];
