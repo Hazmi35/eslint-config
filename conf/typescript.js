@@ -13,10 +13,7 @@ export default [
     {
         ...compat.config({
             plugins: ["@typescript-eslint", "tsdoc"],
-            parser: "@typescript-eslint/parser"
-        })[0],
-
-        languageOptions: {
+            parser: "@typescript-eslint/parser",
             parserOptions: {
                 ecmaVersion: common[0].languageOptions.ecmaVersion,
                 project: true,
@@ -24,7 +21,7 @@ export default [
                 // TODO [@typescript-eslint/parser@>=7]: Remove this. (It's the default from 7 onwards)
                 allowAutomaticSingleRunInference: true
             }
-        },
+        })[0],
 
         rules: {
             // typescript-eslint rules
