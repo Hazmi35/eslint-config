@@ -151,7 +151,107 @@ export default [
             "no-redeclare": "off",
             "@typescript-eslint/no-redeclare": "error",
             "@typescript-eslint/no-redundant-type-constituents": "warn",
-            "@typescript-eslint/no-require-imports": "error"
+            "@typescript-eslint/no-require-imports": "error",
+            "no-shadow": "off",
+            "@typescript-eslint/no-shadow": [
+                "error",
+                {
+                    builtinGlobals: false,
+                    hoist: "all",
+                },
+            ],
+            "@typescript-eslint/no-this-alias": [
+                "error",
+                {
+                    allowDestructuring: true,
+                },
+            ],
+            "@typescript-eslint/no-throw-literal": "error",
+            "@typescript-eslint/no-unnecessary-boolean-literal-compare": "warn",
+            "@typescript-eslint/no-unnecessary-condition": [
+                "warn",
+                {
+                    allowConstantLoopConditions: true,
+                },
+            ],
+            "@typescript-eslint/no-unnecessary-qualifier": "warn",
+            "@typescript-eslint/no-unnecessary-type-arguments": "warn",
+            "@typescript-eslint/no-unnecessary-type-assertion": "warn",
+            "@typescript-eslint/no-unnecessary-type-constraint": "warn",
+            "@typescript-eslint/no-unsafe-argument": "error",
+            "@typescript-eslint/no-unsafe-assignment": "error",
+            "@typescript-eslint/no-unsafe-call": "error",
+            "@typescript-eslint/no-unsafe-declaration-merging": "error",
+            "@typescript-eslint/no-unsafe-enum-comparison": "error",
+            "@typescript-eslint/no-unsafe-member-access": "error",
+            "@typescript-eslint/no-unsafe-return": "error",
+            "@typescript-eslint/no-unsafe-unary-minus": "error",
+            "no-unused-expressions": "off",
+            "@typescript-eslint/no-unused-expressions": "warn",
+            "no-unused-vars": "off",
+            "@typescript-eslint/no-unused-vars": "error",
+            "no-use-before-define": "off",
+            "@typescript-eslint/no-use-before-define": [
+                "error",
+                {
+                    classes: true,
+                    functions: false,
+                    variables: true,
+                }
+            ],
+            "no-useless-constructor": "off",
+            "@typescript-eslint/no-useless-constructor": "warn",
+            "@typescript-eslint/no-useless-empty-export": "warn",
+            "@typescript-eslint/no-useless-template-literal": "warn",
+            "@typescript-eslint/no-var-requires": "error",
+            "@typescript-eslint/prefer-as-const": "warn",
+            "@typescript-eslint/prefer-enum-initializers": "warn",
+            "@typescript-eslint/prefer-includes": "error",
+            "@typescript-eslint/prefer-literal-enum-member": "warn",
+            "prefeer-promise-reject-errors": "off",
+            "@typescript-eslint/prefer-promise-reject-errors": "error",
+            "@typescript-eslint/prefer-readonly": ["error", { "onlyInlineLambdas": true }],
+            "@typescript-eslint/prefer-readonly-parameter-types": "warn",
+            "@typescript-eslint/prefer-reduce-type-parameter": "warn",
+            "@typescript-eslint/prefer-regexp-exec": "error", // TODO [2024-01-31]: Test that this doesn't conflict with unicorn/prefer-regexp-test
+            "@typescript-eslint/prefer-return-this-type": "warn",
+            "@typescript-eslint/prefer-ts-expect-error": "error",
+            "@typescript-eslint/promise-function-async": "error",
+            "@typescript-eslint/require-array-sort-compare": [
+                "error",
+                {
+                    ignoreStringArrays: false,
+                },
+            ],
+            "require-await": "off",
+            "@typescript-eslint/require-await": "warn",
+            "@typescript-eslint/restrict-plus-operands": "error",
+            "@typescript-eslint/restrict-template-expressions": [
+                "error",
+                {
+                    allowBoolean: true,
+                    allowNumber: true
+                }
+            ],
+            "@typescript-eslint/return-await": ["error", "in-try-catch"],
+            "@typescript-eslint/sort-type-constituents": "error",
+            "@typescript-eslint/strict-boolean-expressions": "off", // TODO [2024-01-31]: Enable this
+            "@typescript-eslint/switch-exhaustiveness-check": "error",
+            "@typescript-eslint/triple-slash-reference": [
+                "error",
+                {
+                    lib: "never",
+                    path: "never",
+                    types: "never",
+                },
+            ],
+            "@typescript-eslint/unbound-method": [
+                "error",
+                {
+                    ignoreStatic: true,
+                },
+            ],
+            "@typescript-eslint/unified-signatures": "warn"
         },
 
         settings: {
