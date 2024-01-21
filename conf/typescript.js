@@ -16,7 +16,7 @@ export default [
             parser: "@typescript-eslint/parser",
             parserOptions: {
                 ecmaVersion: common[0].languageOptions.ecmaVersion,
-                project: true,
+                project: ["./tsconfig.json", "./tsconfig.eslint.json"],
 
                 // TODO [@typescript-eslint/parser@>=7]: Remove this. (It's the default from 7 onwards)
                 allowAutomaticSingleRunInference: true
