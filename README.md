@@ -63,6 +63,7 @@ export default [
     ...modules,
     ...node,
     ...stylistic,
+    ...typescript,
     { languageOptions: { parserOptions: { project: "./tsconfig.eslint.json" } } }
 ];
 ```
