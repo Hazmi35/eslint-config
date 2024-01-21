@@ -219,7 +219,7 @@ export default [
             "prefer-rest-params": "error",
             "prefer-spread": "error",
             "prefer-template": "error",
-            "radix": "warn",
+            radix: "warn",
             "require-await": "warn",
             "require-unicode-regexp": "warn",
             "require-yield": "error",
@@ -449,4 +449,4 @@ export default [
             }
         }
     }
-]
+];

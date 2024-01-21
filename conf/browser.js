@@ -17,4 +17,4 @@ export default [
             "unicorn/prefer-modern-dom-apis": "error"
         }
     }
-]
+];

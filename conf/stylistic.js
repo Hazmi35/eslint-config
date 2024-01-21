@@ -8,7 +8,7 @@ export default [
         },
         rules: {
             // Disable legacy rules
-            //...stylistic.configs["disable-legacy"].rules,
+            ...stylistic.configs["disable-legacy"].rules,
 
             // Stylistic rules
             "stylistic/array-bracket-newline": ["warn", "consistent"],
@@ -37,19 +37,19 @@ export default [
             "stylistic/lines-around-comment": [
                 "warn",
                 {
-                    "beforeBlockComment": true,
-                    "afterBlockComment": false,
-                    "beforeLineComment": true,
-                    "afterLineComment": false,
-                    "allowBlockStart": true,
-                    "allowBlockEnd": true,
-                    "allowObjectStart": true,
-                    "allowObjectEnd": true,
-                    "allowArrayStart": true,
-                    "allowArrayEnd": true,
-                    "allowClassStart": true,
-                    "allowClassEnd": true,
-                    "afterHashbangComment": true
+                    beforeBlockComment: true,
+                    afterBlockComment: false,
+                    beforeLineComment: true,
+                    afterLineComment: false,
+                    allowBlockStart: true,
+                    allowBlockEnd: true,
+                    allowObjectStart: true,
+                    allowObjectEnd: true,
+                    allowArrayStart: true,
+                    allowArrayEnd: true,
+                    allowClassStart: true,
+                    allowClassEnd: true,
+                    afterHashbangComment: true
                 }
             ],
             "stylistic/lines-between-class-members": ["warn", "always", { exceptAfterSingleLine: true }],
@@ -98,6 +98,51 @@ export default [
             "stylistic/no-trailing-spaces": "warn",
             "stylistic/no-whitespace-before-property": "error",
             "stylistic/nonblock-statement-body-position": ["warn", "beside"],
+            "stylistic/object-curly-newline": ["warn", { multiline: true, consistent: true }],
+            "stylistic/object-curly-spacing": ["error", "always"],
+            "stylistic/object-property-newline": ["warn", { allowAllPropertiesOnSameLine: true }],
+            "stylistic/operator-linebreak": ["warn", "after", {
+                overrides: {
+                    "?": "before",
+                    ":": "before"
+                }
+            }],
+            "stylistic/padded-blocks": ["warn", "never"],
+            "stylistic/padding-line-between-statements": "warn",
+            "stylistic/quote-props": ["warn", "as-needed"],
+            "stylistic/quotes": ["warn", "double", { avoidEscape: true, allowTemplateLiterals: false }],
+            "stylistic/rest-spread-spacing": ["error", "never"],
+            "stylistic/semi": ["error", "always", { omitLastInOneLineBlock: false }],
+            "stylistic/semi-spacing": ["error", { before: false, after: true }],
+            "stylistic/semi-style": ["error", "last"],
+            "stylistic/space-before-blocks": ["warn", "always"],
+            "stylistic/space-before-function-paren": ["warn", { anonymous: "always", named: "never", asyncArrow: "always" }],
+            "stylistic/space-in-parens": ["warn", "never"],
+            "stylistic/space-infix-ops": ["warn", { int32Hint: true }],
+            "stylistic/space-unary-ops": ["warn", { words: true, nonwords: false }],
+            "stylistic/spaced-comment": ["warn", "always"],
+            "stylistic/switch-colon-spacing": ["error", { after: true, before: false }],
+            "stylistic/template-curly-spacing": ["warn", "never"],
+            "stylistic/template-tag-spacing": ["warn", "never"],
+            "stylistic/type-annotation-spacing": [
+                "warn",
+                {
+                    before: false,
+                    after: true,
+                    overrides:
+                    {
+                        arrow: {
+                            before: true,
+                            after: true
+                        }
+                    }
+                }
+            ],
+            "stylistic/type-generic-spacing": "warn",
+            "stylistic/type-named-tuple-spacing": "warn",
+            "stylistic/wrap-iife": ["warn", "inside"],
+            "stylistic/wrap-regex": "warn",
+            "stylistic/yield-star-spacing": ["warn", "both"],
 
             // JSX
             "stylistic/jsx-child-element-spacing": "warn",
@@ -121,4 +166,4 @@ export default [
             "stylistic/jsx-wrap-multilines": "warn"
         }
     }
-]
+];

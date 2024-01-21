@@ -19,6 +19,7 @@ export default [
         languageOptions: {
             parserOptions: {
                 ecmaVersion: common.languageOptions.parserOptions.ecmaVersion,
+
                 // TODO [@typescript-eslint/parser@>=7]: Remove this. (It's the default from 7 onwards)
                 allowAutomaticSingleRunInference: true
             }
@@ -245,7 +246,7 @@ export default [
             "@typescript-eslint/prefer-optional-chain": "error",
             "prefer-promise-reject-errors": "off",
             "@typescript-eslint/prefer-promise-reject-errors": "error",
-            "@typescript-eslint/prefer-readonly": ["error", { "onlyInlineLambdas": true }],
+            "@typescript-eslint/prefer-readonly": ["error", { onlyInlineLambdas: true }],
             "@typescript-eslint/prefer-readonly-parameter-types": "warn",
             "@typescript-eslint/prefer-reduce-type-parameter": "warn",
             "@typescript-eslint/prefer-regexp-exec": "error", // TODO [2024-01-31]: Test that this doesn't conflict with unicorn/prefer-regexp-test
@@ -315,4 +316,4 @@ export default [
             }
         }
     }
-]
+];

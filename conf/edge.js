@@ -19,4 +19,4 @@ export default [
             "n/prefer-global/url-search-params": ["error", "always"]
         }
     }
-]
+];
