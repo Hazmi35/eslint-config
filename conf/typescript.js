@@ -233,7 +233,7 @@ export default [
             "no-useless-constructor": "off",
             "@typescript-eslint/no-useless-constructor": "warn",
             "@typescript-eslint/no-useless-empty-export": "warn",
-            "@typescript-eslint/no-useless-template-literal": "warn",
+            "@typescript-eslint/no-useless-template-literals": "warn",
             "@typescript-eslint/no-var-requires": "error",
             "@typescript-eslint/non-nullable-type-assertion-style": "warn",
             "@typescript-eslint/prefer-as-const": "warn",
