@@ -4,6 +4,7 @@ import globals from "globals";
 export default [
     {
         files: ["**/*.js", "!**/*.min.js"],
+        ignores: ["**/*.min.js"],
 
         languageOptions: {
             globals: {
