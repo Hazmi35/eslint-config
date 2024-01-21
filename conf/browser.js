@@ -3,7 +3,6 @@ import globals from "globals";
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
-        files: ["**/*.js", "!**/*.min.js"],
         ignores: ["**/*.min.js"],
 
         languageOptions: {
