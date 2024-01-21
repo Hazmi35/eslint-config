@@ -50,6 +50,7 @@ export default [...common, ...modules, ...node, ...stylistic];
 import { common, modules, node, stylistic, typescript } from "@hazmi35/eslint-config";
 
 export default [...common, ...modules, ...node, ...stylistic, ...typescript];
+```
 </details>
 
 <details>
