@@ -17,7 +17,7 @@
   "author": "Hazmi35 <contact@hzmi.xyz>",
   "type": "module",
   "exports": {
-    ".": "./conf/common.js",
+    ".": "./index.js",
     "./browser": "./conf/browser.js",
     "./common": "./conf/common.js",
     "./edge": "./conf/edge.js",

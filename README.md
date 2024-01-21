@@ -36,10 +36,7 @@ Create an `eslint.config.js` file in the root of your project and add the follow
 <br>
 
 ```js
-import common from "@hazmi35/eslint-config/common";
-import modules from "@hazmi35/eslint-config/modules";
-import node from "@hazmi35/eslint-config/node";
-import stylistic from "@hazmi35/eslint-config/stylistic";
+import { common, modules, node, stylistic } from "@hazmi35/eslint-config";
 
 export default [...common, ...modules, ...node, ...stylistic];
 ``````
@@ -50,11 +47,7 @@ export default [...common, ...modules, ...node, ...stylistic];
 <br>
 
 ```js
-import common from "@hazmi35/eslint-config/common";
-import modules from "@hazmi35/eslint-config/modules";
-import node from "@hazmi35/eslint-config/node";
-import stylistic from "@hazmi35/eslint-config/stylistic";
-import typescript from "@hazmi35/eslint-config/typescript";
+import { common, modules, node, stylistic, typescript } from "@hazmi35/eslint-config";
 
 export default [...common, ...modules, ...node, ...stylistic, ...typescript];
 </details>
@@ -64,10 +57,7 @@ export default [...common, ...modules, ...node, ...stylistic, ...typescript];
 <br>
 
 ```js
-import common from "@hazmi35/eslint-config/common";
-import modules from "@hazmi35/eslint-config/modules";
-import node from "@hazmi35/eslint-config/node";
-import prettier from "@hazmi35/eslint-config/prettier";
+import { common, modules, node, prettier } from "@hazmi35/eslint-config";
 
 // Prettier must not be used with stylistic config, because it will conflict with each other.
 export default [...common, ...modules, ...node, ...prettier];
