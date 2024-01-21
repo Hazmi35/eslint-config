@@ -7,7 +7,6 @@ import globals from "globals";
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
-        files: ["**/*.js", "**/*.cjs", "**/*.mjs"],
         ignores: ["node_modules/**/*", "**/*.min.js"],
 
         languageOptions: {
