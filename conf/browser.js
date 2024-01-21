@@ -3,6 +3,8 @@ import globals from "globals";
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
+        files: ["**/*.js", "!**/*.min.js"],
+
         languageOptions: {
             globals: {
                 ...globals.browser
