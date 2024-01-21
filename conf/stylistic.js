@@ -94,7 +94,7 @@ export default [
             "stylistic/no-mixed-operators": "error",
             "stylistic/no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
             "stylistic/no-multi-spaces": ["error", { ignoreEOLComments: true }],
-            "stylistic/no-multiple-empty-lines": ["warn", { max: 1, maxEOF: 1, maxBOF: 1 }],
+            "stylistic/no-multiple-empty-lines": ["warn", { max: 1, maxEOF: 1, maxBOF: 0 }],
             "stylistic/no-trailing-spaces": "warn",
             "stylistic/no-whitespace-before-property": "error",
             "stylistic/nonblock-statement-body-position": ["warn", "beside"],
