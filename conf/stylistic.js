@@ -3,7 +3,7 @@ import stylistic from "@stylistic/eslint-plugin";
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
-        plugin: {
+        plugins: {
             stylistic
         },
         rules: {
@@ -40,7 +40,7 @@ export default [
             "stylistic/jsx-curly-newline": ["warn", "consistent"],
             "stylistic/jsx-curly-spacing": ["warn", "never"],
             "stylistic/jsx-equals-spacing": ["warn", "never"],
-            "stylistic/jsx-first-prop-newline": "warn",
+            "stylistic/jsx-first-prop-new-line": "warn",
             "stylistic/jsx-indent": ["error", 4],
             "stylistic/jsx-indent-props": ["error", 4],
             "stylistic/jsx-max-props-per-line": "warn",

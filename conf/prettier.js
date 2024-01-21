@@ -4,7 +4,7 @@ import prettier from "eslint-config-prettier";
 export default [
     {
         rules: {
-            ...prettier.rules,
+            ...prettier.rules
         }
     }
 ];

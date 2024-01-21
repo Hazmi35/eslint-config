@@ -2,7 +2,7 @@
 export default [
     {
         languageOptions: {
-            sourceType: "module",
+            sourceType: "module"
         },
         rules: {
             "unicorn/prefer-module": "error",

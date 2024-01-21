@@ -13,14 +13,14 @@ export default [
     {
         ...compat.config({
             plugins: ["@typescript-eslint", "tsdoc"],
-            parser: "@typescript-eslint/parser",
+            parser: "@typescript-eslint/parser"
         })[0],
 
         languageOptions: {
             parserOptions: {
                 ecmaVersion: common.languageOptions.parserOptions.ecmaVersion,
                 // TODO [@typescript-eslint/parser@>=7]: Remove this. (It's the default from 7 onwards)
-                allowAutomaticSingleRunInference: true,
+                allowAutomaticSingleRunInference: true
             }
         },
 
@@ -38,21 +38,21 @@ export default [
                 "error",
                 {
                     assertionStyle: "as",
-                    objectLiteralTypeAssertions: "allow",
-                },
+                    objectLiteralTypeAssertions: "allow"
+                }
             ],
             "@typescript-eslint/consistent-type-definitions": ["error", "type"],
             "@typescript-eslint/consistent-type-exports": [
                 "warn",
                 {
-                    fixMixedExportsWithInlineTypeSpecifier: true,
-                },
+                    fixMixedExportsWithInlineTypeSpecifier: true
+                }
             ],
             "@typescript-eslint/consistent-type-imports": [
                 "warn",
                 {
-                    prefer: "type-imports",
-                },
+                    prefer: "type-imports"
+                }
             ],
             "default-param-last": "off",
             "@typescript-eslint/default-param-last": "warn",
@@ -123,16 +123,16 @@ export default [
                 "error",
                 {
                     ignoreVoid: true,
-                    ignoreIIFE: true,
-                },
+                    ignoreIIFE: true
+                }
             ],
             "@typescript-eslint/no-for-in-array": "error",
             "@typescript-eslint/no-inferrable-types": [
                 "error",
                 {
                     ignoreParameters: true,
-                    ignoreProperties: true,
-                },
+                    ignoreProperties: true
+                }
             ],
             "no-implied-eval": "off",
             "@typescript-eslint/no-implied-eval": "error",
@@ -143,8 +143,8 @@ export default [
                 "error",
                 {
                     allowAsThisParameter: true,
-                    allowInGenericTypeArguments: true,
-                },
+                    allowInGenericTypeArguments: true
+                }
             ],
             "no-loop-func": "off",
             "@typescript-eslint/no-loop-func": "error",
@@ -153,23 +153,23 @@ export default [
             "@typescript-eslint/no-meaningless-void-operator": [
                 "error",
                 {
-                    checkNever: true,
-                },
+                    checkNever: true
+                }
             ],
             "@typescript-eslint/no-misused-new": "error",
             "@typescript-eslint/no-misused-promises": [
                 "error",
                 {
                     checksConditionals: true,
-                    checksVoidReturn: false,
-                },
+                    checksVoidReturn: false
+                }
             ],
             "@typescript-eslint/no-mixed-enums": "warn",
             "@typescript-eslint/no-namespace": [
                 "error",
                 {
-                    allowDeclarations: true,
-                },
+                    allowDeclarations: true
+                }
             ],
             "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
             "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
@@ -182,14 +182,14 @@ export default [
                 "error",
                 {
                     builtinGlobals: false,
-                    hoist: "all",
-                },
+                    hoist: "all"
+                }
             ],
             "@typescript-eslint/no-this-alias": [
                 "error",
                 {
-                    allowDestructuring: true,
-                },
+                    allowDestructuring: true
+                }
             ],
             "no-throw-literal": "off",
             "@typescript-eslint/no-throw-literal": "error",
@@ -197,8 +197,8 @@ export default [
             "@typescript-eslint/no-unnecessary-condition": [
                 "warn",
                 {
-                    allowConstantLoopConditions: true,
-                },
+                    allowConstantLoopConditions: true
+                }
             ],
             "@typescript-eslint/no-unnecessary-qualifier": "warn",
             "@typescript-eslint/no-unnecessary-type-arguments": "warn",
@@ -225,7 +225,7 @@ export default [
                 {
                     classes: true,
                     functions: false,
-                    variables: true,
+                    variables: true
                 }
             ],
             "no-useless-constructor": "off",
@@ -256,8 +256,8 @@ export default [
             "@typescript-eslint/require-array-sort-compare": [
                 "error",
                 {
-                    ignoreStringArrays: false,
-                },
+                    ignoreStringArrays: false
+                }
             ],
             "require-await": "off",
             "@typescript-eslint/require-await": "warn",
@@ -278,14 +278,14 @@ export default [
                 {
                     lib: "never",
                     path: "never",
-                    types: "never",
-                },
+                    types: "never"
+                }
             ],
             "@typescript-eslint/unbound-method": [
                 "error",
                 {
-                    ignoreStatic: true,
-                },
+                    ignoreStatic: true
+                }
             ],
             "@typescript-eslint/unified-signatures": "warn",
 
@@ -300,19 +300,19 @@ export default [
                 mode: "typescript"
             },
             "import/parsers": {
-                "@typescript-eslint/parser": [".ts", ".tsx", ".cts", ".mts"],
+                "@typescript-eslint/parser": [".ts", ".tsx", ".cts", ".mts"]
             },
             "import/external-module-folders": ["node_modules", "node_modules/@types"],
             "import/extensions": [".ts", ".tsx", ".cts", ".mts", ".js", ".jsx"],
             "import/resolver": {
                 typescript: {
                     alwaysTryTypes: true,
-                    project: ["./tsconfig.json", "./tsconfig.eslint.json"],
+                    project: ["./tsconfig.json", "./tsconfig.eslint.json"]
                 },
                 node: {
-                    extensions: [".ts", ".tsx", ".cts", ".mts", ".js", ".jsx"],
+                    extensions: [".ts", ".tsx", ".cts", ".mts", ".js", ".jsx"]
                 }
-            },
+            }
         }
     }
 ]

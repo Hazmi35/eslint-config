@@ -5,7 +5,7 @@ export default [
     {
         languageOptions: {
             globals: {
-                ...globals.node,
+                ...globals.node
             }
         },
         rules: {
@@ -16,7 +16,7 @@ export default [
             "n/prefer-global/text-decoder": ["error", "always"],
             "n/prefer-global/text-encoder": ["error", "always"],
             "n/prefer-global/url": ["error", "always"],
-            "n/prefer-global/url-search-params": ["error", "always"],
+            "n/prefer-global/url-search-params": ["error", "always"]
         }
     }
 ]

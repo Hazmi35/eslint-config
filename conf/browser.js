@@ -14,7 +14,7 @@ export default [
             "unicorn/prefer-dom-node-remove": "error",
             "unicorn/prefer-dom-node-text-content": "error",
             "unicorn/prefer-keyboard-event-key": "error",
-            "unicorn/prefer-modern-dom-apis": "error",
+            "unicorn/prefer-modern-dom-apis": "error"
         }
     }
 ]

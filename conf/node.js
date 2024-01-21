@@ -6,7 +6,7 @@ export default [
     {
         languageOptions: {
             globals: {
-                ...globals.node,
+                ...globals.node
             },
             parserOptions: {
                 globalReturn: true
@@ -20,36 +20,36 @@ export default [
                 "error",
                 {
                     name: "Buffer",
-                    message: "Import Buffer from `node:buffer` instead",
+                    message: "Import Buffer from `node:buffer` instead"
                 },
                 {
                     name: "process",
-                    message: "Import process from `node:process` instead",
+                    message: "Import process from `node:process` instead"
                 },
                 {
                     name: "setTimeout",
-                    message: "Import setTimeout from `node:timers` instead",
+                    message: "Import setTimeout from `node:timers` instead"
                 },
                 {
                     name: "setInterval",
-                    message: "Import setInterval from `node:timers` instead",
+                    message: "Import setInterval from `node:timers` instead"
                 },
                 {
                     name: "setImmediate",
-                    message: "Import setImmediate from `node:timers` instead",
+                    message: "Import setImmediate from `node:timers` instead"
                 },
                 {
                     name: "clearTimeout",
-                    message: "Import clearTimeout from `node:timers` instead",
+                    message: "Import clearTimeout from `node:timers` instead"
                 },
                 {
                     name: "clearInterval",
-                    message: "Import clearInterval from `node:timers` instead",
+                    message: "Import clearInterval from `node:timers` instead"
                 },
                 {
                     name: "clearImmediate",
-                    message: "Import clearImmediate from `node:timers` instead",
-                },
+                    message: "Import clearImmediate from `node:timers` instead"
+                }
             ],
 
             // eslint-plugin-unicorn
@@ -67,7 +67,7 @@ export default [
             "node/no-sync": [
                 "error",
                 {
-                    allowAtRootLevel: true,
+                    allowAtRootLevel: true
                 }
             ],
             "node/no-unpublished-bin": "error",
@@ -85,8 +85,8 @@ export default [
                 "error",
                 {
                     convertPath: {
-                        "src/**/*.js": ["^src/(.+?)\\.js$", "dist/$1.js"],
-                    },
+                        "src/**/*.js": ["^src/(.+?)\\.js$", "dist/$1.js"]
+                    }
                 }
             ]
         }

@@ -15,9 +15,9 @@ export default [
             parserOptions: {
                 ecmaFeatures: {
                     globalReturn: false,
-                    impliedStrict: true,
+                    impliedStrict: true
                 }
-            },
+            }
         },
         linterOptions: {
             reportUnusedDisableDirectives: "warn"
@@ -91,8 +91,8 @@ export default [
                 {
                     classes: true,
                     functions: false,
-                    variables: true,
-                },
+                    variables: true
+                }
             ],
             "no-useless-backreference": "error",
             "require-atomic-updates": "error",
@@ -124,8 +124,8 @@ export default [
                 "warn",
                 {
                     exceptions: ["_", "$", "a", "b", "c", "x", "y", "z", "i"],
-                    min: 2,
-                },
+                    min: 2
+                }
             ],
             "logical-assignment-operators": ["warn", "always"],
             "new-cap": "warn",
@@ -177,8 +177,8 @@ export default [
                 "error",
                 {
                     builtinGlobals: false,
-                    hoist: "all",
-                },
+                    hoist: "all"
+                }
             ],
             "no-shadow-restricted-names": "error",
             "no-throw-literal": "error",
@@ -197,7 +197,7 @@ export default [
                 {
                     ignoreDestructuring: false,
                     ignoreExport: false,
-                    ignoreImport: false,
+                    ignoreImport: false
                 }
             ],
             "no-useless-return": "warn",
@@ -247,8 +247,8 @@ export default [
                 {
                     devDependencies: true,
                     optionalDependencies: true,
-                    peerDependencies: true,
-                },
+                    peerDependencies: true
+                }
             ],
             "import/no-mutable-exports": "error",
             "import/no-self-import": "error",
@@ -259,10 +259,10 @@ export default [
                 {
                     alphabetize: {
                         caseInsensitive: false,
-                        order: "asc",
+                        order: "asc"
                     },
                     groups: ["builtin", "external", "internal", "parent", "sibling", "index"],
-                    "newlines-between": "never",
+                    "newlines-between": "never"
                 }
             ],
 
@@ -281,8 +281,8 @@ export default [
                 "error",
                 {
                     noMultilineBlocks: false,
-                    noSingleLineBlocks: true,
-                },
+                    noSingleLineBlocks: true
+                }
             ],
             "jsdoc/no-bad-blocks": "error",
             "jsdoc/no-blank-blocks": "error",
@@ -300,8 +300,8 @@ export default [
                 "error",
                 "never",
                 {
-                    startLines: 1,
-                },
+                    startLines: 1
+                }
             ],
             "jsdoc/valid-types": "error",
 
@@ -365,19 +365,19 @@ export default [
                 "error",
                 {
                     hexadecimal: {
-                        onlyIfContainsSeparator: true,
+                        onlyIfContainsSeparator: true
                     },
                     binary: {
-                        onlyIfContainsSeparator: true,
+                        onlyIfContainsSeparator: true
                     },
                     octal: {
-                        onlyIfContainsSeparator: true,
+                        onlyIfContainsSeparator: true
                     },
                     number: {
                         groupLength: 3,
-                        minimumDigits: 0,
-                    },
-                },
+                        minimumDigits: 0
+                    }
+                }
             ],
             "unicorn/prefer-array-find": "error",
             "unicorn/prefer-array-flat": "error",
@@ -444,8 +444,8 @@ export default [
             "import/extensions": [".js"],
             "import/resolver": {
                 node: {
-                    extensions: [".js"],
-                },
+                    extensions: [".js"]
+                }
             }
         }
     }
