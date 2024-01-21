@@ -8,9 +8,6 @@ devDependencies:
   '@eslint/eslintrc':
     specifier: ^3.0.0
     version: 3.0.0
-  '@eslint/js':
-    specifier: '>=8.56.0'
-    version: 8.56.0
   '@tsconfig/node-lts':
     specifier: ^20.1.1
     version: 20.1.1
