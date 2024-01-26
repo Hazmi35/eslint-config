@@ -1,6 +1,6 @@
 {
   "name": "@hazmi35/eslint-config",
-  "version": "13.0.6",
+  "version": "13.1.0",
   "description": "An ESLint shareable config that I used in my projects",
   "keywords": [
     "typescript",
