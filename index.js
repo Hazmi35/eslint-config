@@ -8,16 +8,17 @@ export { default as stylistic } from "./conf/stylistic.js";
 export { default as typescript } from "./conf/typescript.js";
 
 /**
- * @param {import("eslint").Linter.FlatConfig[]} config
- * @param {{ rule: string, option: ["off" | "warn" | "error", object] }[]} rulesAndOptions
+ * @param {import("eslint").Linter.FlatConfig[]} config - eslint config
+ * @param {{ rule: string, option: ["off" | "warn" | "error", object] }[]} rulesAndOptions - rules and options to extend
+ * @param {boolean} replace - replace existing options
  * @returns {import("eslint").Linter.FlatConfig[]}
  * @example extend(config, [{ rule: "no-console", option: ["warn", { allow: ["warn", "error"] }] }])
  */
-export function extend(config, rulesAndOptions) {
+export function extend(config, rulesAndOptions, replace = false) {
     return config.map(c => {
         if (c.rules) {
             for (const { rule, option } of rulesAndOptions) {
-                c.rules[rule] = option;
+                c.rules[rule] = replace ? option : [option[0], { ...c.rules[rule][1], ...option[1] }];
             }
         }
         return c;
