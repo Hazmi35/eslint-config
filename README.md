@@ -97,7 +97,7 @@ export default [...common, ...modules, ...node, ...stylistic, ...extend(typescri
             }
         ]
         // or
-        option: "off"
+        option: ["off"]
     }
 ])];
 ```
