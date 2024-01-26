@@ -82,14 +82,24 @@ export default [...common, ...modules, ...node, ...prettier];
 <summary>Extending rules</summary>
 <br>
 
-```js
-import { common, modules, node, stylistic, typescript } from "@hazmi35/eslint-config";
+Extending rules using the extend function is recommended.
 
-export default [...common, ...modules, ...node, ...stylistic, ...typescript, {
-    rules: {
-        "@typescript-eslint/no-unnecessary-condition": "off"
+```js
+import { common, extend, modules, node, stylistic, typescript } from "./index.js";
+
+export default [...common, ...modules, ...node, ...stylistic, ...extend(typescript, [
+    {
+        rule: "@typescript-eslint/no-unnecessary-condition",
+        option: [
+            "warn",
+            {
+                allowConstantLoopConditions: false
+            }
+        ]
+        // or
+        option: "off"
     }
-}];
+])];
 ```
 </details>
 
