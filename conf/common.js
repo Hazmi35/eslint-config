@@ -264,7 +264,7 @@ export default [
                         order: "asc"
                     },
                     groups: ["builtin", "external", "internal", "parent", "sibling", "index"],
-                    "newlines-between": "never"
+                    "newlines-between": "ignore"
                 }
             ],
 
