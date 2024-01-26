@@ -19,6 +19,10 @@
   "exports": {
     ".": "./index.js"
   },
+  "files": [
+    "conf/*.js",
+    "index.js"
+  ],
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
