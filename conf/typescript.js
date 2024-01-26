@@ -12,7 +12,7 @@ const compat = new FlatCompat({ resolvePluginsRelativeTo: directoryName });
 export default [
     {
         files: ["**/*.ts", "**/*.cts", "**/*.mts"],
-        ignores: ["node_modules/**/*"],
+        ignores: ["node_modules/**/*", "dist/*"],
 
         ...compat.config({
             plugins: ["@typescript-eslint", "tsdoc"],
