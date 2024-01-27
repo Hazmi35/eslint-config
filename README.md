@@ -27,6 +27,7 @@ Available configurations:
 - [node](./conf/node.js) - For usage within a [Node.js](https://nodejs.org) environment.
 - [edge](./conf/edge.js) - For usage within an edge/serverless environment. For example [Cloudflare Workers](https://workers.cloudflare.com/).
 - [modules](./conf/modules.js) - For usage with [ES Modules](https://nodejs.org/api/esm.html).
+- [ignores](./conf/ignores.js) - To enable global ignores for ESLint. Needed for ESLint to ignore files that shouldn't be linted.
 
 ### Configuration
 Create an `eslint.config.js` file in the root of your project and add the following code:
@@ -36,9 +37,9 @@ Create an `eslint.config.js` file in the root of your project and add the follow
 <br>
 
 ```js
-import { common, modules, node, stylistic } from "@hazmi35/eslint-config";
+import { common, modules, node, stylistic, ...ignores } from "@hazmi35/eslint-config";
 
-export default [...common, ...modules, ...node, ...stylistic];
+export default [...common, ...modules, ...node, ...stylistic, ...ignores];
 ``````
 </details>
 
@@ -48,9 +49,9 @@ export default [...common, ...modules, ...node, ...stylistic];
 
 ```js
 module.exports = (async () => {
-    const { common, node, stylistic } = await import("@hazmi35/eslint-config");
+    const { common, node, stylistic, ignores } = await import("@hazmi35/eslint-config");
 
-    return [...common, ...node, ...stylistic];
+    return [...common, ...node, ...stylistic, ...ignores];
 })();
 ```
 </details>
@@ -60,9 +61,9 @@ module.exports = (async () => {
 <br>
 
 ```js
-import { common, modules, node, stylistic, typescript } from "@hazmi35/eslint-config";
+import { common, modules, node, stylistic, typescript, ignores } from "@hazmi35/eslint-config";
 
-export default [...common, ...modules, ...node, ...stylistic, ...typescript];
+export default [...common, ...modules, ...node, ...stylistic, ...typescript, ...ignores];
 ```
 </details>
 
@@ -71,10 +72,10 @@ export default [...common, ...modules, ...node, ...stylistic, ...typescript];
 <br>
 
 ```js
-import { common, modules, node, prettier } from "@hazmi35/eslint-config";
+import { common, modules, node, prettier, ignores } from "@hazmi35/eslint-config";
 
 // Prettier must not be used with stylistic config, because it will conflict with each other.
-export default [...common, ...modules, ...node, ...prettier];
+export default [...common, ...modules, ...node, ...prettier, ...ignores];
 ```
 </details>
 
@@ -85,9 +86,9 @@ export default [...common, ...modules, ...node, ...prettier];
 Extending rules using the extend function is recommended.
 
 ```js
-import { common, extend, modules, node, stylistic, typescript } from "./index.js";
+import { common, extend, modules, node, stylistic, typescript, ignores } from "./index.js";
 
-export default [...common, ...modules, ...node, ...stylistic, ...extend(typescript, [
+export default [...common, ...modules, ...node, ...stylistic, ...ignores, ...extend(typescript, [
     {
         rule: "@typescript-eslint/no-unnecessary-condition",
         option: [

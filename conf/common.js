@@ -3,11 +3,12 @@ import jsdoc from "eslint-plugin-jsdoc";
 import promise from "eslint-plugin-promise";
 import unicorn from "eslint-plugin-unicorn";
 import globals from "globals";
+import ignores from "./ignores.js";
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
-        ignores: ["node_modules/**/*", "**/*.min.js", "dist/**/*"],
+        ignores: ignores[0].ignores,
 
         languageOptions: {
             ecmaVersion: "latest",

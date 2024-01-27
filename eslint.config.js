@@ -1,3 +1,3 @@
-import { common, modules, node, stylistic } from "./index.js";
+import { common, modules, node, stylistic, ignores } from "./index.js";
 
-export default [...common, ...modules, ...node, ...stylistic];
+export default [...common, ...modules, ...node, ...stylistic, ...ignores];
