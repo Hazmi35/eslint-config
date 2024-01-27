@@ -37,9 +37,9 @@ Create an `eslint.config.js` file in the root of your project and add the follow
 <br>
 
 ```js
-import { common, modules, node, stylistic } from "@hazmi35/eslint-config";
+import { common, modules, node, stylistic, ...ignores } from "@hazmi35/eslint-config";
 
-export default [...common, ...modules, ...node, ...stylistic];
+export default [...common, ...modules, ...node, ...stylistic, ...ignores];
 ``````
 </details>
 
