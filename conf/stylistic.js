@@ -1,9 +1,10 @@
 import stylistic from "@stylistic/eslint-plugin";
+import ignores from "./ignores.js";
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
-        ignores: ["node_modules/**/*", "**/*.min.js", "dist/**/*"],
+        ignores: ignores[0].ignores,
 
         plugins: {
             stylistic

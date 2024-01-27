@@ -1,9 +1,10 @@
 import unicorn from "eslint-plugin-unicorn";
+import ignores from "./ignores.js";
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
-        ignores: ["node_modules/**/*", "**/*.min.js", "dist/**/*"],
+        ignores: ignores[0].ignores,
 
         languageOptions: {
             sourceType: "module"
