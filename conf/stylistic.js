@@ -3,7 +3,7 @@ import stylistic from "@stylistic/eslint-plugin";
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
-        ignores: ["node_modules/**/*", "**/*.min.js", "dist/*"],
+        ignores: ["node_modules/**/*", "**/*.min.js", "dist/**/*"],
 
         plugins: {
             stylistic
