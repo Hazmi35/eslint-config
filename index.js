@@ -19,7 +19,15 @@ export function extend(config, rulesAndOptions, replace = false) {
     return config.map(c => {
         if (c.rules) {
             for (const { rule, option } of rulesAndOptions) {
-                c.rules[rule] = replace ? option : [option[0], { ...c.rules[rule][1], ...option[1] }];
+                if (replace) {
+                    c.rules[rule] = option;
+                } else {
+                    const oldOption = c.rules[rule];
+                    c.rules[rule] = [
+                        option[0],
+                        Array.isArray(oldOption) ? { ...oldOption[1], ...option[1] } : option[1]
+                    ];
+                }
             }
         }
         return c;
