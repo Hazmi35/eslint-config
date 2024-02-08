@@ -9,7 +9,10 @@ export default [
 
         languageOptions: {
             globals: {
-                ...globals.node
+                ...globals.node,
+
+                // TODO [2025-01-01] Find better way to fix this?
+                NodeJS: "readonly"
             },
             parserOptions: {
                 globalReturn: true
