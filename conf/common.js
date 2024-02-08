@@ -317,7 +317,7 @@ export default [
             "unicorn/empty-brace-spaces": "warn",
             "unicorn/error-message": "error",
             "unicorn/escape-case": "warn",
-            "unicorn/expiring-todo-comments": ["error", { allowWarningComments: false }],
+            "unicorn/expiring-todo-comments": ["warn", { allowWarningComments: false }],
             "unicorn/explicit-length-check": "warn",
             "unicorn/filename-case": ["warn", {
                 cases: {
