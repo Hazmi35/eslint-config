@@ -238,6 +238,7 @@ export default [
             "@typescript-eslint/non-nullable-type-assertion-style": "warn",
             "@typescript-eslint/prefer-as-const": "warn",
             "@typescript-eslint/prefer-enum-initializers": "warn",
+            "@typescript-eslint/prefer-find": "error",
             "@typescript-eslint/prefer-for-of": "warn",
             "@typescript-eslint/prefer-function-type": "warn",
             "@typescript-eslint/prefer-includes": "error",
