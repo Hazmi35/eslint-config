@@ -162,6 +162,7 @@ export default [
             "stylistic/jsx-newline": "warn",
             "stylistic/jsx-one-expression-per-line": "warn",
             "stylistic/jsx-props-no-multi-spaces": "warn",
+            "stylistic/jsx-pascal-case": "warn",
             "stylistic/jsx-quotes": ["warn", "prefer-double"],
             "stylistic/jsx-self-closing-comp": "warn",
             "stylistic/jsx-sort-props": "warn",
