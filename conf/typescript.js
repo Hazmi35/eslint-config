@@ -89,12 +89,12 @@ export default [
                     trailingUnderscore: "forbid"
                 },
                 {
-                    selector: "variable", // TODO [2024-01-31]: Test that this works with destructuring, and if not the the default selector should be used instead.
+                    selector: "variable",
                     format: null,
                     modifiers: ["destructured"]
                 },
                 {
-                    selector: "default", // TODO [2024-01-31]: Test that this works. If not, then the default selector should be used instead.
+                    selector: "default",
                     format: null,
                     modifiers: ["requiresQuotes"]
                 }
@@ -249,9 +249,9 @@ export default [
             "@typescript-eslint/prefer-promise-reject-errors": "error",
             "@typescript-eslint/prefer-readonly": ["error", { onlyInlineLambdas: true }],
             "@typescript-eslint/prefer-reduce-type-parameter": "warn",
-            "@typescript-eslint/prefer-regexp-exec": "error", // TODO [2024-01-31]: Test that this doesn't conflict with unicorn/prefer-regexp-test
+            "@typescript-eslint/prefer-regexp-exec": "error",
             "@typescript-eslint/prefer-return-this-type": "warn",
-            "@typescript-eslint/prefer-string-starts-ends-with": "error", // TODO [2024-01-31]: Test that this doesn't conflict with unicorn/prefer-string-starts-ends-with
+            "@typescript-eslint/prefer-string-starts-ends-with": "error",
             "@typescript-eslint/prefer-ts-expect-error": "error",
             "@typescript-eslint/promise-function-async": "error",
             "@typescript-eslint/require-array-sort-compare": [
