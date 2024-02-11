@@ -29,8 +29,8 @@
     "release": "pnpm publish --access public --no-git-checks"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.0.0",
-    "@stylistic/eslint-plugin": "^1.6.0",
+    "@eslint/eslintrc": "^3.0.1",
+    "@stylistic/eslint-plugin": "^1.6.1",
     "@tsconfig/node-lts": "^20.1.1",
     "@types/node": "*",
     "@typescript-eslint/eslint-plugin": ">=6.21.0",
@@ -44,12 +44,12 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-tsdoc": "^0.2.17",
     "eslint-plugin-unicorn": "^51.0.1",
-    "globals": "^13.24.0",
+    "globals": "^14.0.0",
     "typescript": ">=4.3.5 <5.4.0"
   },
   "peerDependencies": {
-    "@eslint/eslintrc": "^3.0.0",
-    "@stylistic/eslint-plugin": "^1.6.0",
+    "@eslint/eslintrc": "^3.0.1",
+    "@stylistic/eslint-plugin": "^1.6.1",
     "@typescript-eslint/eslint-plugin": ">=6.21.0",
     "@typescript-eslint/parser": ">=6.21.0",
     "eslint": ">=8.56.0",
