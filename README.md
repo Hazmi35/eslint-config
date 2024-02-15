@@ -90,7 +90,7 @@ import { common, extend, modules, node, stylistic, typescript, ignores } from ".
 
 export default [...common, ...modules, ...node, ...stylistic, ...ignores, ...extend(typescript, [
     {
-        rule: "@typescript-eslint/no-unnecessary-condition",
+        rule: "typescript/no-unnecessary-condition",
         option: [
             "warn",
             {

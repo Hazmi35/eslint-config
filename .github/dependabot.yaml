@@ -14,7 +14,7 @@ updates:
           - "eslint"
       typescript:
         patterns:
-          - "@typescript-eslint/*"
+          - "typescript-eslint"
           - "typescript"
   - package-ecosystem: github-actions
     directory: /
