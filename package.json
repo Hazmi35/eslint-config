@@ -29,7 +29,6 @@
     "release": "pnpm publish --access public --no-git-checks"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.0.1",
     "@stylistic/eslint-plugin": "^1.6.1",
     "@tsconfig/node-lts": "^20.1.1",
     "@types/node": "*",
@@ -47,7 +46,6 @@
     "typescript-eslint": "^7.0.1"
   },
   "peerDependencies": {
-    "@eslint/eslintrc": "^3.0.1",
     "@stylistic/eslint-plugin": "^1.6.1",
     "eslint": ">=8.56.0",
     "eslint-config-prettier": "^9.1.0",
