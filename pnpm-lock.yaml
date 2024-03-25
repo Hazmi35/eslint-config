@@ -10,7 +10,7 @@ devDependencies:
     version: 1.6.1(eslint@8.56.0)(typescript@5.3.3)
   '@tsconfig/node-lts':
     specifier: ^20.1.1
-    version: 20.1.1
+    version: 20.1.2
   '@types/node':
     specifier: '*'
     version: 20.11.17
@@ -247,8 +247,8 @@ packages:
       - typescript
     dev: true
 
-  /@tsconfig/node-lts@20.1.1:
-    resolution: {integrity: sha512-V7wHydi1dv8I8xiOX3pJ0lhC+MlOakznvLks94J6y/TqQK6DBcbdD1G4jEq8yU+s6lBASPn4e1Ci636fDqeyvQ==}
+  /@tsconfig/node-lts@20.1.2:
+    resolution: {integrity: sha512-ac1p25SlBvxIG7WInTKMcIOpk+jzXcaOuhCiE4Ddq38RAvp0uWCugTedUHN4sobVTMbIKALbBI+ucGrQmPoeiA==}
     dev: true
 
   /@types/json-schema@7.0.15:
