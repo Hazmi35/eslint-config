@@ -84,10 +84,11 @@ export default [
             "node/prefer-global/text-encoder": ["error", "never"],
             "node/prefer-global/url": ["error", "never"],
             "node/prefer-global/url-search-params": ["error", "never"],
+            "node/prefer-node-protocol": "off", // Uses unicorn/prefer-node-protocol instead
             "node/prefer-promises/dns": "error",
             "node/prefer-promises/fs": "error",
             "node/process-exit-as-throw": "error",
-            "node/shebang": [
+            "node/hashbang": [
                 "error",
                 {
                     convertPath: {
