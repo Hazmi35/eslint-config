@@ -31,7 +31,7 @@ devDependencies:
     version: 48.2.3(eslint@8.56.0)
   eslint-plugin-n:
     specifier: ^17.0.0
-    version: 17.0.0(eslint@8.56.0)
+    version: 17.5.1(eslint@8.56.0)
   eslint-plugin-promise:
     specifier: ^6.1.1
     version: 6.1.1(eslint@8.56.0)
@@ -1091,8 +1091,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-n@17.0.0(eslint@8.56.0):
-    resolution: {integrity: sha512-0Ihff+kWUIiXYTNTotGj/yRI1X5uCh/lef5Hr7ih/mFeYMQ3bPfN0KxlrfhU+Xn4x697l/TPO6zxqE33M1yD0w==}
+  /eslint-plugin-n@17.5.1(eslint@8.56.0):
+    resolution: {integrity: sha512-+E242KoY16xtwqqBRgSsDCrZ3K40jg3Np9fOgQyakcHaqymK3bnxYB1F1oe8Ksts8TDDViROFgraoLzbWhfHVw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.23.0'
@@ -1102,9 +1102,8 @@ packages:
       eslint: 8.56.0
       eslint-plugin-es-x: 7.5.0(eslint@8.56.0)
       get-tsconfig: 4.7.2
-      globals: 14.0.0
+      globals: 15.0.0
       ignore: 5.3.1
-      is-builtin-module: 3.2.1
       minimatch: 9.0.3
       semver: 7.6.0
     dev: true
@@ -1401,11 +1400,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
-    dev: true
-
-  /globals@14.0.0:
-    resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
-    engines: {node: '>=18'}
     dev: true
 
   /globals@15.0.0:
