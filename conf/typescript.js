@@ -4,6 +4,7 @@ import tseslint from "typescript-eslint";
 import common from "./common.js";
 
 export default tseslint.config({
+    name: "hzmi/typescript",
     files: ["**/*.ts", "**/*.cts", "**/*.mts"],
     ignores: common[0].ignores,
     plugins: {
@@ -18,7 +19,6 @@ export default tseslint.config({
             project: ["./tsconfig.json", "./tsconfig.eslint.json"]
         }
     },
-
     rules: {
         // typescript-eslint rules
         "typescript/adjacent-overload-signatures": "error",

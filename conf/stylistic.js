@@ -4,8 +4,8 @@ import ignores from "./ignores.js";
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
+        name: "hzmi/stylistic",
         ignores: ignores[0].ignores,
-
         plugins: {
             stylistic
         },

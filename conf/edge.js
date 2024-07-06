@@ -4,8 +4,8 @@ import ignores from "./ignores.js";
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
+        name: "hzmi/edge",
         ignores: ignores[0].ignores,
-
         languageOptions: {
             globals: {
                 ...globals.node

@@ -8,8 +8,8 @@ import ignores from "./ignores.js";
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
     {
+        name: "hzmi/common",
         ignores: ignores[0].ignores,
-
         languageOptions: {
             ecmaVersion: "latest",
             globals: {
