@@ -24,7 +24,7 @@ export default tseslint.config({
         "typescript/adjacent-overload-signatures": "error",
         "typescript/array-type": "error",
         "typescript/await-thenable": "error",
-        "typescript/ban-ts-comment": ["error", { minimumDescriptionLength: 5 }],
+        "typescript/ban-ts-comment": ["error", { minimumDescriptionLength: 5, "ts-expect-error": "allow-with-description" }],
         "typescript/ban-tslint-comment": "error",
         "typescript/class-literal-property-style": ["error", "fields"],
         "typescript/consistent-generic-constructors": "warn",
@@ -246,7 +246,6 @@ export default tseslint.config({
         "typescript/prefer-regexp-exec": "error",
         "typescript/prefer-return-this-type": "warn",
         "typescript/prefer-string-starts-ends-with": "error",
-        "typescript/prefer-ts-expect-error": "error",
         "typescript/promise-function-async": "error",
         "typescript/require-array-sort-compare": [
             "error",
