@@ -1,4 +1,4 @@
-import importPlugin from "eslint-plugin-import";
+import importPlugin from "eslint-plugin-import-x";
 import tsdoc from "eslint-plugin-tsdoc";
 import tseslint from "typescript-eslint";
 import common from "./common.js";
