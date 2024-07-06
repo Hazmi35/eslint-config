@@ -283,6 +283,7 @@ export default tseslint.config({
             }
         ],
         "typescript/unified-signatures": "warn",
+        "typescript/use-unknown-in-catch-callback-variable": "error",
 
         // tsdoc and jsdoc rules
         "jsdoc/check-tag-names": "off",
