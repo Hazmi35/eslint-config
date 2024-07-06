@@ -37,24 +37,6 @@ export default [
             "stylistic/key-spacing": ["warn", { beforeColon: false, afterColon: true, mode: "strict" }],
             "stylistic/keyword-spacing": ["warn", { before: true, after: true }],
             "stylistic/linebreak-style": ["error", "unix"],
-            "stylistic/lines-around-comment": [
-                "warn",
-                {
-                    beforeBlockComment: true,
-                    afterBlockComment: false,
-                    beforeLineComment: true,
-                    afterLineComment: false,
-                    allowBlockStart: true,
-                    allowBlockEnd: true,
-                    allowObjectStart: true,
-                    allowObjectEnd: true,
-                    allowArrayStart: true,
-                    allowArrayEnd: true,
-                    allowClassStart: true,
-                    allowClassEnd: true,
-                    afterHashbangComment: true
-                }
-            ],
             "stylistic/lines-between-class-members": ["warn", "always", { exceptAfterSingleLine: true }],
             "stylistic/max-len": [
                 "warn",
