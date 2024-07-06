@@ -412,6 +412,7 @@ export default [
             "unicorn/prefer-set-has": "warn",
             "unicorn/prefer-set-size": "warn",
             "unicorn/prefer-spread": "error",
+            "unicorn/prefer-string-raw": "warn",
             "unicorn/prefer-string-replace-all": "error",
             "unicorn/prefer-string-slice": "error",
             "unicorn/prefer-string-starts-ends-with": "error",
