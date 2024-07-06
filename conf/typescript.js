@@ -196,6 +196,7 @@ export default tseslint.config({
             }
         ],
         "typescript/no-unnecessary-qualifier": "warn",
+        "typescript/no-unnecessary-template-expression": "warn",
         "typescript/no-unnecessary-type-arguments": "warn",
         "typescript/no-unnecessary-type-assertion": "warn",
         "typescript/no-unnecessary-type-constraint": "warn",
@@ -226,7 +227,6 @@ export default tseslint.config({
         "no-useless-constructor": "off",
         "typescript/no-useless-constructor": "warn",
         "typescript/no-useless-empty-export": "warn",
-        "typescript/no-useless-template-literals": "warn",
         "typescript/no-var-requires": "error",
         "typescript/non-nullable-type-assertion-style": "warn",
         "typescript/prefer-as-const": "warn",
