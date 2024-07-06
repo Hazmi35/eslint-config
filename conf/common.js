@@ -342,6 +342,7 @@ export default [
             "unicorn/no-invalid-remove-event-listener": "error",
             "unicorn/no-lonely-if": "error", // Used together with no-lonely-if from eslint rules as it's recommended
             "unicorn/no-negated-condition": "error", // Replaces no-negated-condition from eslint rules
+            "unicorn/no-negation-in-equality-check": "error",
             "unicorn/no-nested-ternary": "error", // Replaces no-nested-ternary from eslint rules
             "unicorn/no-new-array": "error",
             "unicorn/no-new-buffer": "error",
