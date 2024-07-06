@@ -189,7 +189,7 @@ export default tseslint.config({
         "no-throw-literal": "off",
         "typescript/no-throw-literal": "error",
         "typescript/no-unnecessary-boolean-literal-compare": "warn",
-        "typescript/essary-condition": [
+        "typescript/no-unnecessary-condition": [
             "warn",
             {
                 allowConstantLoopConditions: true
