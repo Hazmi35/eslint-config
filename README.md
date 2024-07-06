@@ -103,14 +103,3 @@ export default [...common, ...modules, ...node, ...stylistic, ...ignores, ...ext
 ])];
 ```
 </details>
-
-### Usage with Code Editors
-#### VSCode
-As of right now, the VSCode ESLint extension need to enable flat config support manually. To do that, open your VSCode settings and add the following code:
-```json
-{
-    "eslint.experimental.useFlatConfig": true
-}
-```
-
-This is a known issue and will be fixed in the future, see: [microsoft/vscode-eslint#1644](https://github.com/microsoft/vscode-eslint/issues/1644)
