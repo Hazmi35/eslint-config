@@ -131,7 +131,6 @@ export default [
                 }
             ],
             "logical-assignment-operators": ["warn", "always"],
-            "new-cap": "warn",
             "no-alert": "warn",
             "no-array-constructor": "warn",
             "no-caller": "error",
