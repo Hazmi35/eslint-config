@@ -92,7 +92,7 @@ export default [
                 "error",
                 {
                     convertPath: {
-                        "src/**/*.ts": ["^src/(.+?)\\.ts$", "dist/$1.js"]
+                        "src/**/*.ts": [String.raw`^src/(.+?)\.ts$`, "dist/$1.js"]
                     }
                 }
             ]
