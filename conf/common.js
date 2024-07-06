@@ -340,6 +340,7 @@ export default [
             "unicorn/no-for-loop": "warn",
             "unicorn/no-hex-escape": "error",
             "unicorn/no-instanceof-array": "error",
+            "unicorn/no-invalid-fetch-options": "error",
             "unicorn/no-invalid-remove-event-listener": "error",
             "unicorn/no-lonely-if": "error", // Used together with no-lonely-if from eslint rules as it's recommended
             "unicorn/no-negated-condition": "error", // Replaces no-negated-condition from eslint rules
