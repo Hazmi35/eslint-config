@@ -156,6 +156,7 @@ export default [
             "stylistic/jsx-curly-spacing": ["warn", "never"],
             "stylistic/jsx-equals-spacing": ["warn", "never"],
             "stylistic/jsx-first-prop-new-line": "warn",
+            "stylistic/jsx-function-call-newline": "warn",
             "stylistic/jsx-indent": ["error", 4],
             "stylistic/jsx-indent-props": ["error", 4],
             "stylistic/jsx-max-props-per-line": "warn",
