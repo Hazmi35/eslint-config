@@ -112,7 +112,7 @@ export default tseslint.config({
         "no-empty-function": "off",
         "typescript/no-empty-function": "warn",
         "typescript/no-empty-interface": "warn",
-        "typescript/-non-null-assertion": "error",
+        "typescript/no-non-null-assertion": "error",
         "typescript/no-extraneous-class": "warn",
         "typescript/no-floating-promises": [
             "error",
