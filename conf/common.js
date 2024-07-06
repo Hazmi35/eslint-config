@@ -418,6 +418,7 @@ export default [
             "unicorn/prefer-string-slice": "error",
             "unicorn/prefer-string-starts-ends-with": "error",
             "unicorn/prefer-string-trim-start-end": "error",
+            "unicorn/prefer-structured-clone": "error",
             "unicorn/prefer-switch": "warn",
             "unicorn/prefer-ternary": "warn",
             "unicorn/prefer-top-level-await": "off", // Add @hazmi35/eslint-config/modules config
