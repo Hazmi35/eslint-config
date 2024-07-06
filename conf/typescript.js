@@ -160,7 +160,7 @@ export default tseslint.config({
             }
         ],
         "typescript/no-mixed-enums": "warn",
-        "typescript/pace": [
+        "typescript/no-namespace": [
             "error",
             {
                 allowDeclarations: true
