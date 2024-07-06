@@ -244,14 +244,6 @@ export default [
             "import/no-duplicates": "error",
             "import/no-dynamic-require": "error",
             "import/no-empty-named-blocks": "error",
-            "import/no-extraneous-dependencies": [
-                "error",
-                {
-                    devDependencies: true,
-                    optionalDependencies: true,
-                    peerDependencies: true
-                }
-            ],
             "import/no-mutable-exports": "error",
             "import/no-self-import": "error",
             "import/no-useless-path-segments": "error",
