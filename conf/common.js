@@ -97,6 +97,7 @@ export default [
                     variables: true
                 }
             ],
+            "no-useless-assignment": "warn",
             "no-useless-backreference": "error",
             "require-atomic-updates": "error",
             "use-isnan": "error",
