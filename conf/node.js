@@ -12,7 +12,8 @@ export default [
                 ...globals.node,
 
                 // TODO [2025-01-01] Find better way to fix this?
-                NodeJS: "readonly"
+                NodeJS: "readonly",
+                Bun: "readonly"
             },
             parserOptions: {
                 globalReturn: true

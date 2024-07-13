@@ -24,7 +24,7 @@ Available configurations:
 - [stylistic](./conf/stylistic.js) - For code styling with [ESLint Stylistic](https://eslint.style). (Exclusive with Prettier)
 - [prettier](./conf/prettier.js) - For code styling with [Prettier](https://prettier.io). (Exclusive with ESLint Stylistic)
 - [browser](./conf/browser.js) - For usage within a browser environment (DOM and Web APIs).
-- [node](./conf/node.js) - For usage within a [Node.js](https://nodejs.org) environment.
+- [node](./conf/node.js) - For usage within a [Node.js](https://nodejs.org) or [Bun](https://bun.sh) environment.
 - [edge](./conf/edge.js) - For usage within an edge/serverless environment. For example [Cloudflare Workers](https://workers.cloudflare.com/).
 - [modules](./conf/modules.js) - For usage with [ES Modules](https://nodejs.org/api/esm.html).
 - [ignores](./conf/ignores.js) - To enable global ignores for ESLint. Needed for ESLint to ignore files that shouldn't be linted.
