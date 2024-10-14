@@ -393,6 +393,7 @@ export default [
             "unicorn/prefer-includes": "error",
             "unicorn/prefer-keyboard-event-key": "error",
             "unicorn/prefer-logical-operator-over-ternary": "error",
+            "unicorn/prefer-math-min-max": "warn",
             "unicorn/prefer-modern-math-apis": "warn",
             "unicorn/prefer-module": "off", // Add @hazmi35/eslint-config/modules config
             "unicorn/prefer-native-coercion-functions": "error",
