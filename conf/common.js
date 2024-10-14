@@ -437,6 +437,7 @@ export default [
             "promise/param-names": "warn",
             "promise/prefer-await-to-callbacks": "warn",
             "promise/prefer-await-to-then": ["error", { strict: false }],
+            "promise/spec-only": "error",
             "promise/valid-params": "error"
         },
 
