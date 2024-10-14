@@ -228,6 +228,7 @@ export default tseslint.config({
         "typescript/no-useless-constructor": "warn",
         "typescript/no-useless-empty-export": "warn",
         "typescript/no-var-requires": "error",
+        "typescript/no-wrapper-object-types": "error",
         "typescript/non-nullable-type-assertion-style": "warn",
         "typescript/prefer-as-const": "warn",
         "typescript/prefer-enum-initializers": "warn",
