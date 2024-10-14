@@ -13,7 +13,7 @@ export default [
         languageOptions: {
             ecmaVersion: "latest",
             globals: {
-                ...globals.es2021
+                ...globals.es2023
             },
             parserOptions: {
                 ecmaFeatures: {
