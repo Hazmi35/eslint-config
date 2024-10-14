@@ -104,6 +104,7 @@ export default tseslint.config({
                 ignoreVoidOperator: false
             }
         ],
+        "typescript/no-deprecated": "warn",
         "no-dupe-class-members": "off",
         "typescript/no-dupe-class-members": "error",
         "typescript/no-duplicate-enum-values": "warn",
