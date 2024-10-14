@@ -1,7 +1,7 @@
 import globals from "globals";
 import ignores from "./ignores.js";
 
-/** @type {import("eslint").Linter.FlatConfig[]} */
+/** @type {import("eslint").Linter.Config[]} */
 export default [
     {
         name: "hzmi/browser",
