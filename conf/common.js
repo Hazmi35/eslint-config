@@ -389,7 +389,7 @@ export default [
             "unicorn/prefer-date-now": "error",
             "unicorn/prefer-default-parameters": "warn",
             "unicorn/prefer-export-from": "error",
-            "unicorn/prefer-global-this": "error",
+            "unicorn/prefer-global-this": "warn",
             "unicorn/prefer-includes": "error",
             "unicorn/prefer-keyboard-event-key": "error",
             "unicorn/prefer-logical-operator-over-ternary": "error",
