@@ -25,6 +25,7 @@ export default [
             "stylistic/comma-spacing": ["warn", { before: false, after: true }],
             "stylistic/comma-style": ["warn", "last"],
             "stylistic/computed-property-spacing": ["warn", "never"],
+            "stylistic/curly-newline": ["warn", { multiline: true, minElements: 3, consistent: true }],
             "stylistic/dot-location": ["warn", "property"],
             "stylistic/eol-last": ["warn", "always"],
             "stylistic/function-call-argument-newline": ["warn", "consistent"],
