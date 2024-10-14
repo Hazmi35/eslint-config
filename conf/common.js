@@ -305,6 +305,7 @@ export default [
             "unicorn/catch-error-name": ["warn", { name: "error" }],
             "unicorn/consistent-destructuring": "warn",
             "unicorn/consistent-empty-array-spread": "error",
+            "unicorn/consistent-existence-index-check": "error",
             "unicorn/consistent-function-scoping": "error",
             "unicorn/custom-error-definition": "error",
             "unicorn/empty-brace-spaces": "warn",
