@@ -143,8 +143,6 @@ export default tseslint.config({
         ],
         "no-loop-func": "off",
         "typescript/no-loop-func": "error",
-        "no-loss-of-precision": "off",
-        "typescript/no-loss-of-precision": "error",
         "typescript/no-meaningless-void-operator": [
             "error",
             {
