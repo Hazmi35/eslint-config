@@ -33,8 +33,8 @@ importers:
         specifier: ^50.4.1
         version: 50.4.1(eslint@9.12.0)
       eslint-plugin-n:
-        specifier: ^17.9.0
-        version: 17.9.0(eslint@9.12.0)
+        specifier: ^17.11.1
+        version: 17.11.1(eslint@9.12.0)
       eslint-plugin-promise:
         specifier: ^6.4.0
         version: 6.4.0(eslint@9.12.0)
@@ -642,8 +642,8 @@ packages:
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
 
-  eslint-plugin-n@17.9.0:
-    resolution: {integrity: sha512-CPSaXDXdrT4nsrOrO4mT4VB6FMUkoySRkHWuuJJHVqsIEjIeZgMY1H7AzSwPbDScikBmLN82KeM1u7ixV7PzGg==}
+  eslint-plugin-n@17.11.1:
+    resolution: {integrity: sha512-93IUD82N6tIEgjztVI/l3ElHtC2wTa9boJHrD8iN+NyDxjxz/daZUZKfkedjBZNdg6EqDk4irybUsiPwDqXAEA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.23.0'
@@ -2075,7 +2075,7 @@ snapshots:
   eslint-compat-utils@0.5.1(eslint@9.12.0):
     dependencies:
       eslint: 9.12.0
-      semver: 7.6.2
+      semver: 7.6.3
 
   eslint-config-prettier@9.1.0(eslint@9.12.0):
     dependencies:
@@ -2189,7 +2189,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-n@17.9.0(eslint@9.12.0):
+  eslint-plugin-n@17.11.1(eslint@9.12.0):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.12.0)
       enhanced-resolve: 5.17.0
@@ -2199,7 +2199,7 @@ snapshots:
       globals: 15.11.0
       ignore: 5.3.1
       minimatch: 9.0.5
-      semver: 7.6.2
+      semver: 7.6.3
 
   eslint-plugin-promise@6.4.0(eslint@9.12.0):
     dependencies:
