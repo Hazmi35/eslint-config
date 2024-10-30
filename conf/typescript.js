@@ -16,7 +16,7 @@ export default tseslint.config({
         parser: tseslint.parser,
         parserOptions: {
             ecmaVersion: common[0].languageOptions.ecmaVersion,
-            project: ["./tsconfig.json", "./tsconfig.eslint.json"]
+            projectService: true
         }
     },
     rules: {
