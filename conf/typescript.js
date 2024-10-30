@@ -269,7 +269,14 @@ export default tseslint.config({
         "typescript/return-await": ["error", "in-try-catch"],
         "typescript/sort-type-constituents": "error",
         "typescript/strict-boolean-expressions": "error",
-        "typescript/switch-exhaustiveness-check": "error",
+        "typescript/switch-exhaustiveness-check": [
+            "error",
+            {
+                allowDefaultCaseForExhaustiveSwitch: true,
+                considerDefaultExhaustiveForUnions: true,
+                requireDefaultForNonUnion: true
+            }
+        ],
         "typescript/triple-slash-reference": [
             "error",
             {
