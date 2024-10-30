@@ -442,15 +442,6 @@ export default [
             "promise/prefer-await-to-then": ["error", { strict: false }],
             "promise/spec-only": "error",
             "promise/valid-params": "error"
-        },
-
-        settings: {
-            "import/extensions": [".js"],
-            "import/resolver": {
-                node: {
-                    extensions: [".js"]
-                }
-            }
         }
     }
 ];

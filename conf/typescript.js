@@ -294,20 +294,6 @@ export default tseslint.config({
     settings: {
         jsdoc: {
             mode: "typescript"
-        },
-        "import/parsers": {
-            "typescript-eslint": [".ts", ".tsx", ".cts", ".mts"]
-        },
-        "import/external-module-folders": ["node_modules", "node_modules/@types"],
-        "import/extensions": [".ts", ".tsx", ".cts", ".mts", ".js", ".jsx"],
-        "import/resolver": {
-            typescript: {
-                alwaysTryTypes: true,
-                project: ["./tsconfig.json", "./tsconfig.eslint.json"]
-            },
-            node: {
-                extensions: [".ts", ".tsx", ".cts", ".mts", ".js", ".jsx"]
-            }
         }
     }
 });
