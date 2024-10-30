@@ -16,7 +16,9 @@ export default tseslint.config({
         parser: tseslint.parser,
         parserOptions: {
             ecmaVersion: common[0].languageOptions.ecmaVersion,
-            projectService: true
+            projectService: {
+                allowDefaultProject: ["*.config.js", "*.config.ts", "./*.js"]
+            }
         }
     },
     rules: {
